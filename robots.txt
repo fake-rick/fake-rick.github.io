@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://fake-rick.github.io/sitemap.xml

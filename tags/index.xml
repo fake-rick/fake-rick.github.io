@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Fake瑞克的技术博客</title>
+    <link>https://fake-rick.github.io/tags/</link>
+    <description>Recent content in Tags on Fake瑞克的技术博客</description>
+    <image>
+      <title>Fake瑞克的技术博客</title>
+      <url>https://avatars.githubusercontent.com/u/44377946</url>
+      <link>https://avatars.githubusercontent.com/u/44377946</link>
+    </image>
+    <generator>Hugo -- 0.128.2</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 16 Jul 2024 14:48:05 +0800</lastBuildDate>
+    <atom:link href="https://fake-rick.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Keepalive</title>
+      <link>https://fake-rick.github.io/tags/keepalive/</link>
+      <pubDate>Tue, 16 Jul 2024 14:48:05 +0800</pubDate>
+      <guid>https://fake-rick.github.io/tags/keepalive/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Qt</title>
+      <link>https://fake-rick.github.io/tags/qt/</link>
+      <pubDate>Tue, 16 Jul 2024 14:48:05 +0800</pubDate>
+      <guid>https://fake-rick.github.io/tags/qt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tcp</title>
+      <link>https://fake-rick.github.io/tags/tcp/</link>
+      <pubDate>Tue, 16 Jul 2024 14:48:05 +0800</pubDate>
+      <guid>https://fake-rick.github.io/tags/tcp/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
