@@ -9,10 +9,23 @@
       <url>https://avatars.githubusercontent.com/u/44377946</url>
       <link>https://avatars.githubusercontent.com/u/44377946</link>
     </image>
-    <generator>Hugo -- 0.128.2</generator>
+    <generator>Hugo -- 0.129.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 16 Jul 2024 14:48:05 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jul 2024 10:09:12 +0800</lastBuildDate>
     <atom:link href="https://fake-rick.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clark变换矩阵</title>
+      <link>https://fake-rick.github.io/posts/clark%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5/</link>
+      <pubDate>Thu, 18 Jul 2024 10:09:12 +0800</pubDate>
+      <guid>https://fake-rick.github.io/posts/clark%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5/</guid>
+      <description>什么是Clark变换？ Clark变换将三相系统（在 abc 坐标系中）的时域分量转换为正交静止坐标系 (αβ) 中的两个分量。
+利用基变换来实现三相坐标系(abc)到两相正交坐标系(αβ) 已知三相坐标系的相位依次相差120°且αβ为正交坐标系。 将α轴与a轴重叠，将向量a沿着原点O的方向延长做一条辅助线，∠boe和∠coe等于60°。
+计算向量b和向量c到α轴的投影长度： $$ be = \sin(∠boe) = \sin(60°) = \frac{\sqrt{3}}{2} \\ ce = -\sin(∠coe) = -\sin(60°) = -\frac{\sqrt{3}}{2} $$ 因为向量c在α轴的下方所以投影为负
+计算向量b和向量c到β轴的投影长度： $$ bg = -\cos(∠boe) = -\cos(60°) = -\frac{1}{2} \\ ch = -\cos(∠coe) = -\cos(60°) = -\frac{1}{2} $$ 因为向量b和向量c在β轴的左侧所以投影为负
+组合出基变换矩阵 根据上面的投影可以得到a,b,c三个向量的坐标：向量 $a=[1, 0]$，向量$b=[-\frac{1}{2},\frac{\sqrt{3}}{2}] $，向量 $c=[-\frac{1}{2},-\frac{\sqrt{3}}{2}] $
+所以基变换矩阵为：
+$$ A = \left[ \begin{matrix} 1 &amp; -\frac{1}{2} &amp; -\frac{1}{2} \\ 0 &amp; \frac{\sqrt{3}}{2}&amp; -\frac{\sqrt{3}}{2} \end{matrix} \right] $$ 坐标转换公式为：</description>
+    </item>
     <item>
       <title>Qt使用Keepalive机制实现断线重连</title>
       <link>https://fake-rick.github.io/posts/qt%E4%BD%BF%E7%94%A8keepalive%E6%9C%BA%E5%88%B6%E5%AE%9E%E7%8E%B0%E6%96%AD%E7%BA%BF%E9%87%8D%E8%BF%9E/</link>

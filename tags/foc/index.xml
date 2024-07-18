@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Foc on Fake瑞克的技术博客</title>
+    <link>https://fake-rick.github.io/tags/foc/</link>
+    <description>Recent content in Foc on Fake瑞克的技术博客</description>
+    <image>
+      <title>Fake瑞克的技术博客</title>
+      <url>https://avatars.githubusercontent.com/u/44377946</url>
+      <link>https://avatars.githubusercontent.com/u/44377946</link>
+    </image>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 18 Jul 2024 10:09:12 +0800</lastBuildDate>
+    <atom:link href="https://fake-rick.github.io/tags/foc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clark变换矩阵</title>
+      <link>https://fake-rick.github.io/posts/clark%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5/</link>
+      <pubDate>Thu, 18 Jul 2024 10:09:12 +0800</pubDate>
+      <guid>https://fake-rick.github.io/posts/clark%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5/</guid>
+      <description>什么是Clark变换？ Clark变换将三相系统（在 abc 坐标系中）的时域分量转换为正交静止坐标系 (αβ) 中的两个分量。
+利用基变换来实现三相坐标系(abc)到两相正交坐标系(αβ) 已知三相坐标系的相位依次相差120°且αβ为正交坐标系。 将α轴与a轴重叠，将向量a沿着原点O的方向延长做一条辅助线，∠boe和∠coe等于60°。
+计算向量b和向量c到α轴的投影长度： $$ be = \sin(∠boe) = \sin(60°) = \frac{\sqrt{3}}{2} \\ ce = -\sin(∠coe) = -\sin(60°) = -\frac{\sqrt{3}}{2} $$ 因为向量c在α轴的下方所以投影为负
+计算向量b和向量c到β轴的投影长度： $$ bg = -\cos(∠boe) = -\cos(60°) = -\frac{1}{2} \\ ch = -\cos(∠coe) = -\cos(60°) = -\frac{1}{2} $$ 因为向量b和向量c在β轴的左侧所以投影为负
+组合出基变换矩阵 根据上面的投影可以得到a,b,c三个向量的坐标：向量 $a=[1, 0]$，向量$b=[-\frac{1}{2},\frac{\sqrt{3}}{2}] $，向量 $c=[-\frac{1}{2},-\frac{\sqrt{3}}{2}] $
+所以基变换矩阵为：
+$$ A = \left[ \begin{matrix} 1 &amp; -\frac{1}{2} &amp; -\frac{1}{2} \\ 0 &amp; \frac{\sqrt{3}}{2}&amp; -\frac{\sqrt{3}}{2} \end{matrix} \right] $$ 坐标转换公式为：</description>
+    </item>
+  </channel>
+</rss>
