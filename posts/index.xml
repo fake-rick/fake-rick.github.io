@@ -11,8 +11,28 @@
     </image>
     <generator>Hugo -- 0.129.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 18 Jul 2024 10:55:56 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jul 2024 19:23:22 +0800</lastBuildDate>
     <atom:link href="https://fake-rick.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IsaacLab创建直接工作流RL环境</title>
+      <link>https://fake-rick.github.io/posts/isaaclab%E5%88%9B%E5%BB%BA%E7%9B%B4%E6%8E%A5%E5%B7%A5%E4%BD%9C%E6%B5%81rl%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Sun, 21 Jul 2024 19:23:22 +0800</pubDate>
+      <guid>https://fake-rick.github.io/posts/isaaclab%E5%88%9B%E5%BB%BA%E7%9B%B4%E6%8E%A5%E5%B7%A5%E4%BD%9C%E6%B5%81rl%E7%8E%AF%E5%A2%83/</guid>
+      <description>原文地址：https://isaac-sim.github.io/IsaacLab/source/tutorials/03_envs/create_direct_rl_env.html
+从环境中获取信息（观察） 获取joint（铰链）信息：位置和速度 joint会被包含在Articulation（关节）中，一个Articulation可能会包含1个或多个的joint对象，可以通过Articulation.find_joints()方法获得joint在当前Articulation中的索引（index）数据。
+find_joints的返回值是这样的：tuple[list[joint索引], list[joint名字]]
+find_joints的函数声明如下：
+def find_joints( self, name_keys: str | Sequence[str], joint_subset: list[str] | None = None, preserve_order: bool = False ) -&amp;gt; tuple[list[int], list[str]] 在Articulation内部有一个属性私有变量_data: ArticulationData，该变量通过方法def data(self) -&amp;gt; ArticulationData获取，在ArticulationData中存放着几个关节重要的数据：位置ArticulationData._joint_pos，速度ArticulationData._joint_vel，加速度ArticulationData._joint_acc
+在ArticulationData有几个@property装饰器函数，用于获取上述的三个属性，这样可以用过属性名的方式直接访问到这些数据。
+下面介绍下这三个方法的返回值：
+joint_pos返回torch.Size([num_instances, num_joints])
+joint_vel返回torch.Size([num_instances, num_joints])
+joint_acc返回torch.Size([num_instances, num_joints])
+是时候讲解下DirectRLEnv(gym.Env)._get_observations(self) -&amp;gt; VecEnvObs方法了，该方法带有@abstractmethod被定义成抽象方法，所以我们在继承DirectRLEnv类后必须在自己的类中实现_get_observations方法。
+我们在_get_observations方法中计算并返回观测值，这会用到上面提到的ArticulationData以及如何通过joint索引从中获取实际数据。
+在cartpole_env.py的代码中有如下实现：
+def _get_observations(self) -&amp;gt; torch.Dict[str, torch.Tensor | torch.Dict[str, torch.Tensor]]: obs = torch.cat( ( self.joint_pos[:, self._pole_dof_idx[0]].unsqueeze(dim=1), self.joint_vel[:, self._pole_dof_idx[0]].unsqueeze(dim=1), self.joint_pos[:, self._cart_dof_idx[0]].unsqueeze(dim=1), self.joint_vel[:, self._cart_dof_idx[0]].unsqueeze(dim=1), ), dim=-1, ) observations = {&amp;#34;policy&amp;#34;: obs} return observations 上述代码中的_pole_dof_idx里边存放的是杆子的joint对应的索引数据，_cart_dof_idx存放的是小车的joint对应的索引数据，这里介绍下获取杆子位置的代码，获取杆子速度和小车位置和速度的代码都一样。</description>
+    </item>
     <item>
       <title>Park变换</title>
       <link>https://fake-rick.github.io/posts/park%E5%8F%98%E6%8D%A2/</link>
