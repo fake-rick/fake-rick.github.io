@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Rust on Fake瑞克的技术博客</title>
+    <link>https://fake-rick.github.io/tags/rust/</link>
+    <description>Recent content in Rust on Fake瑞克的技术博客</description>
+    <image>
+      <title>Fake瑞克的技术博客</title>
+      <url>https://avatars.githubusercontent.com/u/44377946</url>
+      <link>https://avatars.githubusercontent.com/u/44377946</link>
+    </image>
+    <generator>Hugo -- 0.131.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 04 Aug 2024 16:37:40 +0800</lastBuildDate>
+    <atom:link href="https://fake-rick.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rust配置STM32嵌入式开发环境</title>
+      <link>https://fake-rick.github.io/posts/rust%E9%85%8D%E7%BD%AEstm32%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Sun, 04 Aug 2024 16:37:40 +0800</pubDate>
+      <guid>https://fake-rick.github.io/posts/rust%E9%85%8D%E7%BD%AEstm32%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
+      <description>安装 安装cargo工具 cargo install cargo-generate
+安装stlink v2驱动 sudo apt-get install git make cmake libusb-1.0-0-dev sudo apt-get install gcc build-essential git clone https://github.com/stlink-org/stlink.git cd stlink/ mkdir build cd build cmake .. make cd bin/ sudo cp st-* /usr/local/bin cd ../lib/ sudo cp *.so* /lib32 cd ../../ sudo cp config/udev/rules.d/49-stlinkv* /etc/udev/rules.d/ 安装烧录和调试的工具 Linux, macOS curl --proto &#39;=https&#39; --tlsv1.2 -LsSf https://github.com/probe-rs/probe-rs/releases/latest/download/probe-rs-tools-installer.sh | sh
+WIndows irm https://github.com/probe-rs/probe-rs/releases/latest/download/probe-rs-tools-installer.ps1 | iex
+安装适用于ARM Cortex-M目标的rust-std组件 rustup target add thumbv6m-none-eabi thumbv7m-none-eabi thumbv7em-none-eabi thumbv7em-none-eabihf</description>
+    </item>
+  </channel>
+</rss>
