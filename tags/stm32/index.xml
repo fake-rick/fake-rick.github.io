@@ -11,8 +11,19 @@
     </image>
     <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 04 Aug 2024 16:37:40 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 05 Aug 2024 14:53:08 +0800</lastBuildDate>
     <atom:link href="https://fake-rick.github.io/tags/stm32/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rust嵌入式开发embassy环境搭建</title>
+      <link>https://fake-rick.github.io/posts/rust%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91embassy%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Mon, 05 Aug 2024 14:53:08 +0800</pubDate>
+      <guid>https://fake-rick.github.io/posts/rust%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91embassy%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <description>先配置Rust开发STM32所需的环境，文章地址： https://fake-rick.github.io/posts/rust%E9%85%8D%E7%BD%AEstm32%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/
+安装项目创建CLI工具 cargo install cargo-embassy
+生成项目 cargo embassy init my_project --chip stm32f407vgtx
+在Cargo.toml中[dependencies]添加：
+embassy-stm32 = { version = &amp;#34;0.1.0&amp;#34;, features = [&amp;#34;defmt&amp;#34;, &amp;#34;stm32f407vg&amp;#34;, &amp;#34;unstable-pac&amp;#34;, &amp;#34;memory-x&amp;#34;, &amp;#34;time-driver-any&amp;#34;, &amp;#34;exti&amp;#34;, &amp;#34;chrono&amp;#34;] } Embed.toml文件 # This file was automatically generated. [default.general] chip = &amp;#34;STM32F407VGTx&amp;#34; [default.reset] halt_afterwards = false [default.rtt] enabled = true [default.gdb] enabled = false 运行 cargo run 如果在终端出现以下内容则表示运行成功：</description>
+    </item>
     <item>
       <title>Rust配置STM32嵌入式开发环境</title>
       <link>https://fake-rick.github.io/posts/rust%E9%85%8D%E7%BD%AEstm32%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
