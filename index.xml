@@ -9,87 +9,370 @@
       <url>https://avatars.githubusercontent.com/u/44377946</url>
       <link>https://avatars.githubusercontent.com/u/44377946</link>
     </image>
-    <generator>Hugo -- 0.131.0</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 05 Aug 2024 14:53:08 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 20 Nov 2024 01:25:37 +0800</lastBuildDate>
     <atom:link href="https://fake-rick.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>配置IsaacLab环境</title>
+      <link>https://fake-rick.github.io/posts/%E9%85%8D%E7%BD%AEisaaclab%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Wed, 20 Nov 2024 01:25:37 +0800</pubDate>
+      <guid>https://fake-rick.github.io/posts/%E9%85%8D%E7%BD%AEisaaclab%E7%8E%AF%E5%A2%83/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;IsaacLab本地安装的方式有两种&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;通过PIP安装&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;二进制安装&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;本次课程将使用二进制安装&lt;/p&gt;
+&lt;h2 id=&#34;安装要求&#34;&gt;安装要求&lt;/h2&gt;
+&lt;h2 id=&#34;系统要求&#34;&gt;系统要求&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Element&lt;/th&gt;
+          &lt;th&gt;Minimum Spec&lt;/th&gt;
+          &lt;th&gt;Good&lt;/th&gt;
+          &lt;th&gt;Ideal&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;OS&lt;/td&gt;
+          &lt;td&gt;Ubuntu 20.04/22.04、Windows 10/11&lt;/td&gt;
+          &lt;td&gt;Ubuntu 20.04/22.04、Windows 10/11&lt;/td&gt;
+          &lt;td&gt;Ubuntu 20.04/22.04、Windows 10/11&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;CPU&lt;/td&gt;
+          &lt;td&gt;Intel Core i7 (7th Generation)、AMD Ryzen 5&lt;/td&gt;
+          &lt;td&gt;Intel Core i7 (9th Generation)、AMD Ryzen 7&lt;/td&gt;
+          &lt;td&gt;Intel Core i9, X-series or higher、AMD Ryzen 9, Threadripper or higher&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Cores&lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;8&lt;/td&gt;
+          &lt;td&gt;16&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RAM&lt;/td&gt;
+          &lt;td&gt;32GB*&lt;/td&gt;
+          &lt;td&gt;64GB*&lt;/td&gt;
+          &lt;td&gt;64GB*&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Storage&lt;/td&gt;
+          &lt;td&gt;50GB SSD&lt;/td&gt;
+          &lt;td&gt;500GB SSD&lt;/td&gt;
+          &lt;td&gt;1TB NVMe SSD&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;GPU&lt;/td&gt;
+          &lt;td&gt;GeForce RTX 3070&lt;/td&gt;
+          &lt;td&gt;GeForce RTX 4080&lt;/td&gt;
+          &lt;td&gt;RTX Ada 6000&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;VRAM&lt;/td&gt;
+          &lt;td&gt;8GB*&lt;/td&gt;
+          &lt;td&gt;16GB*&lt;/td&gt;
+          &lt;td&gt;48GB*&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;本机配置&#34;&gt;本机配置&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;描述&lt;/th&gt;
+          &lt;th&gt;地址&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;显卡&lt;/td&gt;
+          &lt;td&gt;RTX 3080 Ti&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;操作系统&lt;/td&gt;
+          &lt;td&gt;PopOS（一款基于Ubuntu的操作系统）&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://pop.system76.com&#34;&gt;https://pop.system76.com&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;IsaacSim&lt;/td&gt;
+          &lt;td&gt;4.2.0&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://developer.nvidia.com/omniverse#section-getting-started&#34;&gt;https://developer.nvidia.com/omniverse#section-getting-started&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;IsaacLab&lt;/td&gt;
+          &lt;td&gt;最新的main分支&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/isaac-sim/IsaacLab&#34;&gt;https://github.com/isaac-sim/IsaacLab&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Anaconda&lt;/td&gt;
+          &lt;td&gt;Anaconda3-2024.10-1-Linux-x86_64&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://docs.anaconda.com/anaconda/install&#34;&gt;https://docs.anaconda.com/anaconda/install&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;-开始安装&#34;&gt;🎉 开始安装！&lt;/h2&gt;
+&lt;h3 id=&#34;1-anconda安装linux&#34;&gt;1. Anconda安装（Linux）&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 安装依赖&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 下载 &amp;amp; 安装anaconda&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl -O https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bash ~/Anaconda3-2024.10-1-Linux-x86_64.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 刷新环境变量&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;source ~/.bashrc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;2-安装omniverse-launcher&#34;&gt;2. 安装Omniverse Launcher&lt;/h3&gt;
+&lt;h3 id=&#34;3-安装isaacsim420&#34;&gt;3. 安装IsaacSim4.2.0&lt;/h3&gt;
+&lt;h3 id=&#34;4-安装isaaclab&#34;&gt;4. 安装IsaacLab&lt;/h3&gt;
+&lt;h3 id=&#34;5-验证安装&#34;&gt;5. 验证安装&lt;/h3&gt;</description>
+    </item>
     <item>
       <title>Rust嵌入式开发embassy环境搭建</title>
       <link>https://fake-rick.github.io/posts/rust%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91embassy%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Mon, 05 Aug 2024 14:53:08 +0800</pubDate>
       <guid>https://fake-rick.github.io/posts/rust%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91embassy%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
-      <description>先配置Rust开发STM32所需的环境，文章地址： https://fake-rick.github.io/posts/rust%E9%85%8D%E7%BD%AEstm32%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/
-安装项目创建CLI工具 cargo install cargo-embassy
-生成项目 cargo embassy init my_project --chip stm32f407vgtx
-在Cargo.toml中[dependencies]添加：
-embassy-stm32 = { version = &amp;#34;0.1.0&amp;#34;, features = [&amp;#34;defmt&amp;#34;, &amp;#34;stm32f407vg&amp;#34;, &amp;#34;unstable-pac&amp;#34;, &amp;#34;memory-x&amp;#34;, &amp;#34;time-driver-any&amp;#34;, &amp;#34;exti&amp;#34;, &amp;#34;chrono&amp;#34;] } Embed.toml文件 # This file was automatically generated. [default.general] chip = &amp;#34;STM32F407VGTx&amp;#34; [default.reset] halt_afterwards = false [default.rtt] enabled = true [default.gdb] enabled = false 运行 cargo run 如果在终端出现以下内容则表示运行成功：</description>
+      <description>&lt;ul&gt;
+&lt;li&gt;先配置Rust开发STM32所需的环境，文章地址：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://fake-rick.github.io/posts/rust%E9%85%8D%E7%BD%AEstm32%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/&#34;&gt;https://fake-rick.github.io/posts/rust%E9%85%8D%E7%BD%AEstm32%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;安装项目创建cli工具&#34;&gt;安装项目创建CLI工具&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;cargo install cargo-embassy&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;生成项目&#34;&gt;生成项目&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;cargo embassy init my_project --chip stm32f407vgtx&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在Cargo.toml中[dependencies]添加：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;embassy-stm32 = { version = &amp;#34;0.1.0&amp;#34;, features = [&amp;#34;defmt&amp;#34;, &amp;#34;stm32f407vg&amp;#34;, &amp;#34;unstable-pac&amp;#34;, &amp;#34;memory-x&amp;#34;, &amp;#34;time-driver-any&amp;#34;, &amp;#34;exti&amp;#34;, &amp;#34;chrono&amp;#34;] }
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;embedtoml文件&#34;&gt;Embed.toml文件&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# This file was automatically generated.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;default.general&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;chip &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;STM32F407VGTx&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;default.reset&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;halt_afterwards &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; false
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;default.rtt&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;enabled &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; true
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;default.gdb&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;enabled &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; false
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;运行&#34;&gt;运行&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cargo run
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果在终端出现以下内容则表示运行成功：&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;./imgs/A.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rust配置STM32嵌入式开发环境</title>
       <link>https://fake-rick.github.io/posts/rust%E9%85%8D%E7%BD%AEstm32%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Sun, 04 Aug 2024 16:37:40 +0800</pubDate>
       <guid>https://fake-rick.github.io/posts/rust%E9%85%8D%E7%BD%AEstm32%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
-      <description>安装 安装cargo工具 cargo install cargo-generate
-安装stlink v2驱动 sudo apt-get install git make cmake libusb-1.0-0-dev sudo apt-get install gcc build-essential git clone https://github.com/stlink-org/stlink.git cd stlink/ mkdir build cd build cmake .. make cd bin/ sudo cp st-* /usr/local/bin cd ../lib/ sudo cp *.so* /lib32 cd ../../ sudo cp config/udev/rules.d/49-stlinkv* /etc/udev/rules.d/ 安装烧录和调试的工具 Linux, macOS curl --proto &#39;=https&#39; --tlsv1.2 -LsSf https://github.com/probe-rs/probe-rs/releases/latest/download/probe-rs-tools-installer.sh | sh
-WIndows irm https://github.com/probe-rs/probe-rs/releases/latest/download/probe-rs-tools-installer.ps1 | iex
-安装适用于ARM Cortex-M目标的rust-std组件 rustup target add thumbv6m-none-eabi thumbv7m-none-eabi thumbv7em-none-eabi thumbv7em-none-eabihf</description>
+      <description>&lt;h2 id=&#34;安装&#34;&gt;安装&lt;/h2&gt;
+&lt;h3 id=&#34;安装cargo工具&#34;&gt;安装cargo工具&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;cargo install cargo-generate&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;安装stlink-v2驱动&#34;&gt;安装stlink v2驱动&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install git make cmake libusb-1.0-0-dev
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install gcc build-essential
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone https://github.com/stlink-org/stlink.git
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd stlink/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mkdir build
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd build
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cmake ..
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;make
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd bin/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo cp st-* /usr/local/bin
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd ../lib/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo cp *.so* /lib32
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd ../../
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo cp config/udev/rules.d/49-stlinkv* /etc/udev/rules.d/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;安装烧录和调试的工具&#34;&gt;安装烧录和调试的工具&lt;/h3&gt;
+&lt;h4 id=&#34;linux-macos&#34;&gt;Linux, macOS&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;curl --proto &#39;=https&#39; --tlsv1.2 -LsSf https://github.com/probe-rs/probe-rs/releases/latest/download/probe-rs-tools-installer.sh | sh&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;windows&#34;&gt;WIndows&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;irm https://github.com/probe-rs/probe-rs/releases/latest/download/probe-rs-tools-installer.ps1 | iex&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;安装适用于arm-cortex-m目标的rust-std组件&#34;&gt;安装适用于ARM Cortex-M目标的rust-std组件&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;rustup target add thumbv6m-none-eabi thumbv7m-none-eabi thumbv7em-none-eabi thumbv7em-none-eabihf&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>IsaacLab创建直接工作流RL环境</title>
       <link>https://fake-rick.github.io/posts/isaaclab%E5%88%9B%E5%BB%BA%E7%9B%B4%E6%8E%A5%E5%B7%A5%E4%BD%9C%E6%B5%81rl%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Sun, 21 Jul 2024 19:23:22 +0800</pubDate>
       <guid>https://fake-rick.github.io/posts/isaaclab%E5%88%9B%E5%BB%BA%E7%9B%B4%E6%8E%A5%E5%B7%A5%E4%BD%9C%E6%B5%81rl%E7%8E%AF%E5%A2%83/</guid>
-      <description>原文地址：https://isaac-sim.github.io/IsaacLab/source/tutorials/03_envs/create_direct_rl_env.html
-从环境中获取信息（观察） 获取joint（铰链）信息：位置和速度 joint会被包含在Articulation（关节）中，一个Articulation可能会包含1个或多个的joint对象，可以通过Articulation.find_joints()方法获得joint在当前Articulation中的索引（index）数据。
-find_joints的返回值是这样的：tuple[list[joint索引], list[joint名字]]
-find_joints的函数声明如下：
-def find_joints( self, name_keys: str | Sequence[str], joint_subset: list[str] | None = None, preserve_order: bool = False ) -&amp;gt; tuple[list[int], list[str]] 在Articulation内部有一个属性私有变量_data: ArticulationData，该变量通过方法def data(self) -&amp;gt; ArticulationData获取，在ArticulationData中存放着几个关节重要的数据：位置ArticulationData._joint_pos，速度ArticulationData._joint_vel，加速度ArticulationData._joint_acc
-在ArticulationData有几个@property装饰器函数，用于获取上述的三个属性，这样可以用过属性名的方式直接访问到这些数据。
-下面介绍下这三个方法的返回值：
-joint_pos返回torch.Size([num_instances, num_joints])
-joint_vel返回torch.Size([num_instances, num_joints])
-joint_acc返回torch.Size([num_instances, num_joints])
-是时候讲解下DirectRLEnv(gym.Env)._get_observations(self) -&amp;gt; VecEnvObs方法了，该方法带有@abstractmethod被定义成抽象方法，所以我们在继承DirectRLEnv类后必须在自己的类中实现_get_observations方法。
-我们在_get_observations方法中计算并返回观测值，这会用到上面提到的ArticulationData以及如何通过joint索引从中获取实际数据。
-在cartpole_env.py的代码中有如下实现：
-def _get_observations(self) -&amp;gt; torch.Dict[str, torch.Tensor | torch.Dict[str, torch.Tensor]]: obs = torch.cat( ( self.joint_pos[:, self._pole_dof_idx[0]].unsqueeze(dim=1), self.joint_vel[:, self._pole_dof_idx[0]].unsqueeze(dim=1), self.joint_pos[:, self._cart_dof_idx[0]].unsqueeze(dim=1), self.joint_vel[:, self._cart_dof_idx[0]].unsqueeze(dim=1), ), dim=-1, ) observations = {&amp;#34;policy&amp;#34;: obs} return observations 上述代码中的_pole_dof_idx里边存放的是杆子的joint对应的索引数据，_cart_dof_idx存放的是小车的joint对应的索引数据，这里介绍下获取杆子位置的代码，获取杆子速度和小车位置和速度的代码都一样。</description>
+      <description>&lt;p&gt;原文地址：&lt;a href=&#34;https://isaac-sim.github.io/IsaacLab/source/tutorials/03_envs/create_direct_rl_env.html&#34;&gt;https://isaac-sim.github.io/IsaacLab/source/tutorials/03_envs/create_direct_rl_env.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;从环境中获取信息观察&#34;&gt;从环境中获取信息（观察）&lt;/h2&gt;
+&lt;h3 id=&#34;获取joint铰链信息位置和速度&#34;&gt;获取joint（铰链）信息：位置和速度&lt;/h3&gt;
+&lt;p&gt;joint会被包含在Articulation（关节）中，一个Articulation可能会包含1个或多个的joint对象，可以通过&lt;code&gt;Articulation.find_joints()&lt;/code&gt;方法获得joint在当前Articulation中的索引（index）数据。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;find_joints&lt;/code&gt;的返回值是这样的：&lt;code&gt;tuple[list[joint索引], list[joint名字]]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;find_joints的函数声明如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;find_joints&lt;/span&gt;( self, name_keys: str &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; Sequence[str], joint_subset: list[str] &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;None&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;None&lt;/span&gt;, preserve_order: bool &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt; ) &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; tuple[list[int], list[str]]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在Articulation内部有一个属性私有变量&lt;code&gt;_data: ArticulationData&lt;/code&gt;，该变量通过方法&lt;code&gt;def data(self) -&amp;gt; ArticulationData&lt;/code&gt;获取，在&lt;code&gt;ArticulationData&lt;/code&gt;中存放着几个关节重要的数据：位置&lt;code&gt;ArticulationData._joint_pos&lt;/code&gt;，速度&lt;code&gt;ArticulationData._joint_vel&lt;/code&gt;，加速度&lt;code&gt;ArticulationData._joint_acc&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在&lt;code&gt;ArticulationData&lt;/code&gt;有几个&lt;code&gt;@property&lt;/code&gt;装饰器函数，用于获取上述的三个属性，这样可以用过属性名的方式直接访问到这些数据。&lt;/p&gt;
+&lt;p&gt;下面介绍下这三个方法的返回值：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;joint_pos&lt;/code&gt;返回&lt;code&gt;torch.Size([num_instances, num_joints])&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;joint_vel&lt;/code&gt;返回&lt;code&gt;torch.Size([num_instances, num_joints])&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;joint_acc&lt;/code&gt;返回&lt;code&gt;torch.Size([num_instances, num_joints])&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;是时候讲解下&lt;code&gt;DirectRLEnv(gym.Env)._get_observations(self) -&amp;gt; VecEnvObs&lt;/code&gt;方法了，该方法带有&lt;code&gt;@abstractmethod&lt;/code&gt;被定义成抽象方法，所以我们在继承&lt;code&gt;DirectRLEnv&lt;/code&gt;类后必须在自己的类中实现&lt;code&gt;_get_observations&lt;/code&gt;方法。&lt;/p&gt;
+&lt;p&gt;我们在&lt;code&gt;_get_observations&lt;/code&gt;方法中计算并返回观测值，这会用到上面提到的&lt;code&gt;ArticulationData&lt;/code&gt;以及如何通过&lt;code&gt;joint&lt;/code&gt;索引从中获取实际数据。&lt;/p&gt;
+&lt;p&gt;在&lt;code&gt;cartpole_env.py&lt;/code&gt;的代码中有如下实现：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_get_observations&lt;/span&gt;(self) &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Dict[str, torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Tensor &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Dict[str, torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Tensor]]:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	obs &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;cat(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;joint_pos[:, self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;_pole_dof_idx[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;unsqueeze(dim&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;joint_vel[:, self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;_pole_dof_idx[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;unsqueeze(dim&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;joint_pos[:, self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;_cart_dof_idx[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;unsqueeze(dim&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;joint_vel[:, self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;_cart_dof_idx[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;unsqueeze(dim&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		dim&lt;span style=&#34;color:#f92672&#34;&gt;=-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	observations &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;policy&amp;#34;&lt;/span&gt;: obs}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; observations
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;上述代码中的&lt;code&gt;_pole_dof_idx&lt;/code&gt;里边存放的是杆子的&lt;code&gt;joint&lt;/code&gt;对应的索引数据，&lt;code&gt;_cart_dof_idx&lt;/code&gt;存放的是小车的&lt;code&gt;joint&lt;/code&gt;对应的索引数据，这里介绍下获取杆子位置的代码，获取杆子速度和小车位置和速度的代码都一样。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Park变换</title>
       <link>https://fake-rick.github.io/posts/park%E5%8F%98%E6%8D%A2/</link>
       <pubDate>Thu, 18 Jul 2024 10:55:56 +0800</pubDate>
       <guid>https://fake-rick.github.io/posts/park%E5%8F%98%E6%8D%A2/</guid>
-      <description>Park变换 Park变换的目的是将Clark变换后的αβ坐标系转换成d,q旋转坐标系。d轴方向与转子磁链方向重合，所以d轴也叫直轴。q轴方向与转子磁链方向垂直，所以q轴又叫交轴。
-旋转矩阵是什么？ ⊿abo： $ob = oa\times \cos(\theta)$
-已知：bc = ad
-$$ \because \angle pad + \angle pab = 90°\\ \angle oab + \angle pab = 90°\\ \therefore \angle oab = \angle pad\\ \angle aob = \angle apd = \angle \theta $$ ⊿adp： $ad = ap \times \sin(\theta)$
-$$ \because oc = ob + bc \\ \therefore oc = oa \times \cos(\theta) + ap \times \sin(\theta) $$ 所以向量p到d轴的投影为：$oa \times \cos(\theta) + ap \times \sin(\theta)$</description>
+      <description>&lt;h2 id=&#34;park变换&#34;&gt;Park变换&lt;/h2&gt;
+&lt;p&gt;Park变换的目的是将Clark变换后的αβ坐标系转换成d,q旋转坐标系。d轴方向与转子磁链方向重合，所以d轴也叫直轴。q轴方向与转子磁链方向垂直，所以q轴又叫交轴。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;./imgs/a.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;旋转矩阵是什么&#34;&gt;旋转矩阵是什么？&lt;/h2&gt;
+&lt;h3 id=&#34;abo&#34;&gt;⊿abo：&lt;/h3&gt;
+&lt;p&gt;$ob = oa\times \cos(\theta)$&lt;/p&gt;
+&lt;p&gt;已知：&lt;strong&gt;bc = ad&lt;/strong&gt;&lt;/p&gt;
+$$
+\because \angle pad + \angle pab = 90°\\ \angle oab + \angle pab = 90°\\ \therefore \angle oab = \angle pad\\ \angle aob = \angle apd = \angle \theta 
+$$&lt;h3 id=&#34;adp&#34;&gt;⊿adp：&lt;/h3&gt;
+&lt;p&gt;$ad = ap \times \sin(\theta)$&lt;/p&gt;
+$$
+\because oc = ob + bc \\ \therefore oc = oa \times \cos(\theta) + ap \times \sin(\theta) 
+$$&lt;p&gt;所以向量p到d轴的投影为：$oa \times \cos(\theta) + ap \times \sin(\theta)$&lt;/p&gt;</description>
     </item>
     <item>
       <title>Clark变换矩阵</title>
       <link>https://fake-rick.github.io/posts/clark%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5/</link>
       <pubDate>Thu, 18 Jul 2024 10:09:12 +0800</pubDate>
       <guid>https://fake-rick.github.io/posts/clark%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5/</guid>
-      <description>什么是Clark变换？ Clark变换将三相系统（在 abc 坐标系中）的时域分量转换为正交静止坐标系 (αβ) 中的两个分量。
-利用基变换来实现三相坐标系(abc)到两相正交坐标系(αβ) 已知三相坐标系的相位依次相差120°且αβ为正交坐标系。 将α轴与a轴重叠，将向量a沿着原点O的方向延长做一条辅助线，∠boe和∠coe等于60°。
-计算向量b和向量c到α轴的投影长度： $$ be = \sin(∠boe) = \sin(60°) = \frac{\sqrt{3}}{2} \\ ce = -\sin(∠coe) = -\sin(60°) = -\frac{\sqrt{3}}{2} $$ 因为向量c在α轴的下方所以投影为负
-计算向量b和向量c到β轴的投影长度： $$ bg = -\cos(∠boe) = -\cos(60°) = -\frac{1}{2} \\ ch = -\cos(∠coe) = -\cos(60°) = -\frac{1}{2} $$ 因为向量b和向量c在β轴的左侧所以投影为负
-组合出基变换矩阵 根据上面的投影可以得到a,b,c三个向量的坐标：向量 $a=[1, 0]$，向量$b=[-\frac{1}{2},\frac{\sqrt{3}}{2}] $，向量 $c=[-\frac{1}{2},-\frac{\sqrt{3}}{2}] $
-所以基变换矩阵为：
-$$ A = \left[ \begin{matrix} 1 &amp; -\frac{1}{2} &amp; -\frac{1}{2} \\ 0 &amp; \frac{\sqrt{3}}{2}&amp; -\frac{\sqrt{3}}{2} \end{matrix} \right] $$ 坐标转换公式为：</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;./imgs/a.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;什么是clark变换&#34;&gt;什么是Clark变换？&lt;/h2&gt;
+&lt;p&gt;Clark变换将三相系统（在 abc 坐标系中）的时域分量转换为正交静止坐标系 (αβ) 中的两个分量。&lt;/p&gt;
+&lt;h2 id=&#34;利用基变换来实现三相坐标系abc到两相正交坐标系αβ&#34;&gt;利用基变换来实现三相坐标系(abc)到两相正交坐标系(αβ)&lt;/h2&gt;
+&lt;p&gt;已知三相坐标系的相位依次相差120°且αβ为正交坐标系。
+将α轴与a轴重叠，将向量a沿着原点O的方向延长做一条辅助线，∠boe和∠coe等于60°。&lt;/p&gt;
+&lt;h2 id=&#34;计算向量b和向量c到α轴的投影长度&#34;&gt;计算向量b和向量c到α轴的投影长度：&lt;/h2&gt;
+$$
+be = \sin(∠boe) = \sin(60°) = \frac{\sqrt{3}}{2}  \\ ce = -\sin(∠coe) = -\sin(60°) = -\frac{\sqrt{3}}{2}  
+$$&lt;p&gt;因为向量c在α轴的下方所以投影为负&lt;/p&gt;
+&lt;h2 id=&#34;计算向量b和向量c到β轴的投影长度&#34;&gt;计算向量b和向量c到β轴的投影长度：&lt;/h2&gt;
+$$
+bg = -\cos(∠boe) = -\cos(60°) = -\frac{1}{2}  \\   
+ch = -\cos(∠coe) = -\cos(60°) = -\frac{1}{2}  
+$$&lt;p&gt;因为向量b和向量c在β轴的左侧所以投影为负&lt;/p&gt;
+&lt;h2 id=&#34;组合出基变换矩阵&#34;&gt;组合出基变换矩阵&lt;/h2&gt;
+&lt;p&gt;根据上面的投影可以得到a,b,c三个向量的坐标：向量 $a=[1, 0]$，向量$b=[-\frac{1}{2},\frac{\sqrt{3}}{2}] $，向量 $c=[-\frac{1}{2},-\frac{\sqrt{3}}{2}] $&lt;/p&gt;
+&lt;p&gt;所以基变换矩阵为：&lt;/p&gt;
+$$
+A =  \left[ \begin{matrix} 1 &amp; -\frac{1}{2} &amp; -\frac{1}{2} \\ 0 &amp; \frac{\sqrt{3}}{2}&amp; -\frac{\sqrt{3}}{2} \end{matrix} \right] 
+$$&lt;p&gt;坐标转换公式为：&lt;/p&gt;</description>
     </item>
     <item>
       <title>Qt使用Keepalive机制实现断线重连</title>
       <link>https://fake-rick.github.io/posts/qt%E4%BD%BF%E7%94%A8keepalive%E6%9C%BA%E5%88%B6%E5%AE%9E%E7%8E%B0%E6%96%AD%E7%BA%BF%E9%87%8D%E8%BF%9E/</link>
       <pubDate>Tue, 16 Jul 2024 14:48:05 +0800</pubDate>
       <guid>https://fake-rick.github.io/posts/qt%E4%BD%BF%E7%94%A8keepalive%E6%9C%BA%E5%88%B6%E5%AE%9E%E7%8E%B0%E6%96%AD%E7%BA%BF%E9%87%8D%E8%BF%9E/</guid>
-      <description>QTcpSocket能够检测到Socket的连接与断开状态，并触发相关信号，我们只需要关联信号与槽就能够知道连接状态。
-connect(&amp;amp;m_socket, &amp;amp;QTcpSocket::connected, this, &amp;amp;TcpClient::onConnected, Qt::QueuedConnection); connect(&amp;amp;m_socket, &amp;amp;QTcpSocket::disconnected, this, &amp;amp;TcpClient::onDisconnected, Qt::QueuedConnection); 还有一些特殊情况是无法触发QTcpSocket::disconnected信号，比如说：网线突然拔了、对端设备突然爆掉了等。这类情况由于对端socket未正常调用close()方法而导致的。
-我们可以定义一个心跳包去定期检查对端的存活状态，这种做法在协议还未指定的初期是比较适合的，客户端与服务端制定一套心跳请求与应答机制来判断对端的存活状态。但是往往下位机的程序已经存在（开发者不愿意修改或增加现有协议），这时候如何能够在特殊情况下检测到网络断开呢？
-主角登场：Keepalive机制
-keepalive简介（摘自维基百科） 传输控制协议（TCP）存活包为可选特性，且默认关闭。存活包内没有数据。在以太网网络中，存活包的大小为最小长度的几帧（64字节）。协议中，还有三个与存活包相关的参数：
-存活时长（英语：Keepalive time）即空闲时，两次传输存活包的持续时间。TCP存活包时长可手动配置，默认不少于2个小时。 存活间隔（英语：Keepalive interval）即未收到上个存活包时，两次连续传输存活包的时间间隔。 存活重试次数（英语：Keepalive retry）即在判断远程主机不可用前的发送存活包次数。当两个主机透过TCP/IP协议相连时，TCP存活包可用于判断连接是否可用，并按需中断。 多数支持TCP协议的主机也同时支持TCP存活包。每个主机按一定周期向其他主机发送TCP包来请求回应。若发送主机未收到特定主机的回应（ACK），则将从发送主机一侧中断连接。 若其他主机在连接关闭后发送TCP存活包，关闭连接的一方将发送RST包来表明旧连接已不可用。其他主机将关闭它一侧的连接以新建连接。 空闲的TCP连接通常会隔每45秒或60秒发送一次存活包。在未连续收到三次ACK包时，连接将中断。此行为因主机而异，如默认情况下的Windows主机将在7200000ms（2小时）后发送首个存活包，随后再以1000ms的间隔发送5个存活包。若任意存活包未收到回应，连接将被中断。
-Qt开启Keepalive（Linux与Windows） #include &amp;#34;keepalive.h&amp;#34; #include &amp;lt;QObject&amp;gt; const int keepalive = 1; // 开启keepalive属性 const int keepidle = 5; // 如果连接在5秒内没有任何数据来往则进行探测 const int keepinterval = 3; // 探测时发包的时间间隔为3秒 const int keepcount = 3; // 尝试探测的次数， 如果第一次探测包就收到响应，则不在继续探测 #if defined (Q_OS_LINUX) || defined (Q_OS_MACOS) #include &amp;lt;sys/socket.h&amp;gt; #include &amp;lt;sys/types.h&amp;gt; #include &amp;lt;netinet/tcp.</description>
+      <description>&lt;p&gt;&lt;code&gt;QTcpSocket&lt;/code&gt;能够检测到Socket的连接与断开状态，并触发相关信号，我们只需要关联信号与槽就能够知道连接状态。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;connect(&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;m_socket, &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;QTcpSocket&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;connected, &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;, &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;TcpClient&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;onConnected, Qt&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;QueuedConnection);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;connect(&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;m_socket, &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;QTcpSocket&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;disconnected, &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;, &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;TcpClient&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;onDisconnected, Qt&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;QueuedConnection);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;还有一些特殊情况是无法触发&lt;code&gt;QTcpSocket::disconnected&lt;/code&gt;信号，比如说：网线突然拔了、对端设备突然爆掉了等。这类情况由于对端socket未正常调用&lt;code&gt;close()&lt;/code&gt;方法而导致的。&lt;/p&gt;
+&lt;p&gt;我们可以定义一个心跳包去定期检查对端的存活状态，这种做法在协议还未指定的初期是比较适合的，客户端与服务端制定一套心跳请求与应答机制来判断对端的存活状态。但是往往下位机的程序已经存在（开发者不愿意修改或增加现有协议），这时候如何能够在特殊情况下检测到网络断开呢？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;主角登场：Keepalive机制&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;keepalive简介摘自维基百科&#34;&gt;keepalive简介（摘自维基百科）&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;传输控制协议（TCP）存活包为可选特性，且默认关闭。存活包内没有数据。在以太网网络中，存活包的大小为最小长度的几帧（64字节）。协议中，还有三个与存活包相关的参数：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;存活时长（英语：Keepalive time）即空闲时，两次传输存活包的持续时间。TCP存活包时长可手动配置，默认不少于2个小时。&lt;/li&gt;
+&lt;li&gt;存活间隔（英语：Keepalive interval）即未收到上个存活包时，两次连续传输存活包的时间间隔。&lt;/li&gt;
+&lt;li&gt;存活重试次数（英语：Keepalive retry）即在判断远程主机不可用前的发送存活包次数。当两个主机透过TCP/IP协议相连时，TCP存活包可用于判断连接是否可用，并按需中断。
+多数支持TCP协议的主机也同时支持TCP存活包。每个主机按一定周期向其他主机发送TCP包来请求回应。若发送主机未收到特定主机的回应（ACK），则将从发送主机一侧中断连接。 若其他主机在连接关闭后发送TCP存活包，关闭连接的一方将发送RST包来表明旧连接已不可用。其他主机将关闭它一侧的连接以新建连接。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;空闲的TCP连接通常会隔每45秒或60秒发送一次存活包。在未连续收到三次ACK包时，连接将中断。此行为因主机而异，如默认情况下的Windows主机将在7200000ms（2小时）后发送首个存活包，随后再以1000ms的间隔发送5个存活包。若任意存活包未收到回应，连接将被中断。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;qt开启keepalivelinux与windows&#34;&gt;Qt开启Keepalive（Linux与Windows）&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;keepalive.h&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;QObject&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; keepalive &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;    &lt;span style=&#34;color:#75715e&#34;&gt;// 开启keepalive属性
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; keepidle &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;;     &lt;span style=&#34;color:#75715e&#34;&gt;// 如果连接在5秒内没有任何数据来往则进行探测
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; keepinterval &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;; &lt;span style=&#34;color:#75715e&#34;&gt;// 探测时发包的时间间隔为3秒
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; keepcount &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;;    &lt;span style=&#34;color:#75715e&#34;&gt;// 尝试探测的次数， 如果第一次探测包就收到响应，则不在继续探测
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#if defined (Q_OS_LINUX) || defined (Q_OS_MACOS)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;sys/socket.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;sys/types.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;netinet/tcp.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;netinet/in.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// 开启TCP心跳检测机制
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;enableKeepalive&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; fd) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (setsockopt(fd, SOL_SOCKET, SO_KEEPALIVE, &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;keepalive, &lt;span style=&#34;color:#66d9ef&#34;&gt;sizeof&lt;/span&gt;(keepalive)) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (setsockopt(fd, SOL_TCP, TCP_KEEPIDLE, &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;keepidle, &lt;span style=&#34;color:#66d9ef&#34;&gt;sizeof&lt;/span&gt;(keepidle)) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (setsockopt(fd, SOL_TCP, TCP_KEEPINTVL, &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;keepinterval, &lt;span style=&#34;color:#66d9ef&#34;&gt;sizeof&lt;/span&gt;(keepinterval)) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (setsockopt(fd, SOL_TCP, TCP_KEEPCNT, &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;keepcount, &lt;span style=&#34;color:#66d9ef&#34;&gt;sizeof&lt;/span&gt;(keepcount)) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#elif defined (Q_OS_WIN)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;winsock2.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define SIO_KEEPALIVE_VALS _WSAIOW(IOC_VENDOR,4)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;struct&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;tcp_keepalive&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;unsigned&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;long&lt;/span&gt; onoff;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;unsigned&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;long&lt;/span&gt; keepalivetime;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;unsigned&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;long&lt;/span&gt; keepaliveinterval;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;enableKeepalive&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; fd) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (setsockopt(fd, SOL_SOCKET, SO_KEEPALIVE, (&lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;keepalive, &lt;span style=&#34;color:#66d9ef&#34;&gt;sizeof&lt;/span&gt;(keepalive)) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;struct&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;tcp_keepalive&lt;/span&gt; in_keep_alive;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    memset(&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;in_keep_alive, &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;sizeof&lt;/span&gt;(in_keep_alive));
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;unsigned&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;long&lt;/span&gt; ul_in_len &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;sizeof&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;struct&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;tcp_keepalive&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;struct&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;tcp_keepalive&lt;/span&gt; out_keep_alive;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    memset(&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;out_keep_alive, &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;sizeof&lt;/span&gt;(out_keep_alive));
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;unsigned&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;long&lt;/span&gt; ul_out_len &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;sizeof&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;struct&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;tcp_keepalive&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;unsigned&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;long&lt;/span&gt; ul_bytes_return &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    in_keep_alive.onoff &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;                                &lt;span style=&#34;color:#75715e&#34;&gt;// 打开keepalive
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    in_keep_alive.keepaliveinterval &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; keepinterval &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt;;  &lt;span style=&#34;color:#75715e&#34;&gt;// 发送keepalive心跳时间间隔-单位为毫秒
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    in_keep_alive.keepalivetime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; keepidle &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt;;          &lt;span style=&#34;color:#75715e&#34;&gt;// 多长时间没有报文开始发送keepalive心跳包-单位为毫秒
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (WSAIoctl(fd, SIO_KEEPALIVE_VALS, (LPVOID)&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;in_keep_alive, ul_in_len,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                               (LPVOID)&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;out_keep_alive, ul_out_len, &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;ul_bytes_return, NULL, NULL) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#else
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;enableKeepalive&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; fd) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    Q_UNUSED(fd);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#endif
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;socket文件描述符的获取&#34;&gt;Socket文件描述符的获取&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;QAbstractSocket::socketDescriptor() &lt;/code&gt;，在socket连接成功后可使通过&lt;code&gt;m_socket-&amp;gt;socketDescriptor();&lt;/code&gt;获取到QTcpSocket的文件描述符（FD）,失败时返回&lt;code&gt;-1&lt;/code&gt;，这边获取到的fd可以提供给&lt;code&gt;int enableKeepalive(int fd);&lt;/code&gt;作为参数用于启用&lt;code&gt;keepalive&lt;/code&gt;。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

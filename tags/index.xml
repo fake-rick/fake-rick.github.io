@@ -9,10 +9,45 @@
       <url>https://avatars.githubusercontent.com/u/44377946</url>
       <link>https://avatars.githubusercontent.com/u/44377946</link>
     </image>
-    <generator>Hugo -- 0.131.0</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 05 Aug 2024 14:53:08 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 20 Nov 2024 01:25:37 +0800</lastBuildDate>
     <atom:link href="https://fake-rick.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Isaaclab</title>
+      <link>https://fake-rick.github.io/tags/isaaclab/</link>
+      <pubDate>Wed, 20 Nov 2024 01:25:37 +0800</pubDate>
+      <guid>https://fake-rick.github.io/tags/isaaclab/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Isaacsim</title>
+      <link>https://fake-rick.github.io/tags/isaacsim/</link>
+      <pubDate>Wed, 20 Nov 2024 01:25:37 +0800</pubDate>
+      <guid>https://fake-rick.github.io/tags/isaacsim/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://fake-rick.github.io/tags/python/</link>
+      <pubDate>Wed, 20 Nov 2024 01:25:37 +0800</pubDate>
+      <guid>https://fake-rick.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rl</title>
+      <link>https://fake-rick.github.io/tags/rl/</link>
+      <pubDate>Wed, 20 Nov 2024 01:25:37 +0800</pubDate>
+      <guid>https://fake-rick.github.io/tags/rl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <link>https://fake-rick.github.io/tags/tutorial/</link>
+      <pubDate>Wed, 20 Nov 2024 01:25:37 +0800</pubDate>
+      <guid>https://fake-rick.github.io/tags/tutorial/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Rust</title>
       <link>https://fake-rick.github.io/tags/rust/</link>
@@ -25,34 +60,6 @@
       <link>https://fake-rick.github.io/tags/stm32/</link>
       <pubDate>Mon, 05 Aug 2024 14:53:08 +0800</pubDate>
       <guid>https://fake-rick.github.io/tags/stm32/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Isaaclab</title>
-      <link>https://fake-rick.github.io/tags/isaaclab/</link>
-      <pubDate>Sun, 21 Jul 2024 19:23:22 +0800</pubDate>
-      <guid>https://fake-rick.github.io/tags/isaaclab/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Isaacsim</title>
-      <link>https://fake-rick.github.io/tags/isaacsim/</link>
-      <pubDate>Sun, 21 Jul 2024 19:23:22 +0800</pubDate>
-      <guid>https://fake-rick.github.io/tags/isaacsim/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>https://fake-rick.github.io/tags/python/</link>
-      <pubDate>Sun, 21 Jul 2024 19:23:22 +0800</pubDate>
-      <guid>https://fake-rick.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Rl</title>
-      <link>https://fake-rick.github.io/tags/rl/</link>
-      <pubDate>Sun, 21 Jul 2024 19:23:22 +0800</pubDate>
-      <guid>https://fake-rick.github.io/tags/rl/</guid>
       <description></description>
     </item>
     <item>
