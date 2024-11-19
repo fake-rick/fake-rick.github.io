@@ -122,7 +122,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;-开始安装&#34;&gt;🎉 开始安装！&lt;/h2&gt;
-&lt;h3 id=&#34;1-anconda安装linux&#34;&gt;1. Anconda安装（Linux）&lt;/h3&gt;
+&lt;h3 id=&#34;1-anaconda安装linux&#34;&gt;1. Anaconda安装（Linux）&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 安装依赖&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 下载 &amp;amp; 安装anaconda&lt;/span&gt;
@@ -133,7 +133,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;2-安装omniverse-launcher&#34;&gt;2. 安装Omniverse Launcher&lt;/h3&gt;
 &lt;h3 id=&#34;3-安装isaacsim420&#34;&gt;3. 安装IsaacSim4.2.0&lt;/h3&gt;
 &lt;h3 id=&#34;4-安装isaaclab&#34;&gt;4. 安装IsaacLab&lt;/h3&gt;
-&lt;h3 id=&#34;5-验证安装&#34;&gt;5. 验证安装&lt;/h3&gt;</description>
+&lt;h4 id=&#34;41-配置isaacsim环境变量&#34;&gt;4.1 配置IsaacSim环境变量&lt;/h4&gt;
+&lt;p&gt;isaac sim默认被安装在&lt;code&gt;${HOME}/.local/share/ov/pkg/isaac_sim-*&lt;/code&gt;路径下。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
