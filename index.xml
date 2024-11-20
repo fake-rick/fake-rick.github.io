@@ -131,10 +131,13 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 刷新环境变量&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;source ~/.bashrc
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;2-安装omniverse-launcher&#34;&gt;2. 安装Omniverse Launcher&lt;/h3&gt;
-&lt;h3 id=&#34;3-安装isaacsim420&#34;&gt;3. 安装IsaacSim4.2.0&lt;/h3&gt;
-&lt;h3 id=&#34;4-安装isaaclab&#34;&gt;4. 安装IsaacLab&lt;/h3&gt;
-&lt;h4 id=&#34;41-配置isaacsim环境变量&#34;&gt;4.1 配置IsaacSim环境变量&lt;/h4&gt;
-&lt;p&gt;isaac sim默认被安装在&lt;code&gt;${HOME}/.local/share/ov/pkg/isaac_sim-*&lt;/code&gt;路径下。&lt;/p&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 下载Omniverse Launcher&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wget https://install.launcher.omniverse.nvidia.com/installers/omniverse-launcher-linux.AppImage
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 添加可执行权限&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; chmod +x omniverse-launcher-linux.AppImage
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 运行&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./omniverse-launcher-linux.AppImage
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;运行后出现如下界面，然后输入邮箱账号登陆（没注册过的需要先注册）&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rust嵌入式开发embassy环境搭建</title>
