@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Fake瑞克的技术博客</title>
-    <link>https://caw.ink/posts/</link>
+    <link>https://fake-rick.github.io/posts/</link>
     <description>Recent content in Posts on Fake瑞克的技术博客</description>
     <image>
       <title>Fake瑞克的技术博客</title>
@@ -12,12 +12,12 @@
     <generator>Hugo -- 0.139.0</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 20 Nov 2024 01:25:37 +0800</lastBuildDate>
-    <atom:link href="https://caw.ink/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://fake-rick.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>配置IsaacLab环境</title>
-      <link>https://caw.ink/posts/%E9%85%8D%E7%BD%AEisaaclab%E7%8E%AF%E5%A2%83/</link>
+      <link>https://fake-rick.github.io/posts/%E9%85%8D%E7%BD%AEisaaclab%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Wed, 20 Nov 2024 01:25:37 +0800</pubDate>
-      <guid>https://caw.ink/posts/%E9%85%8D%E7%BD%AEisaaclab%E7%8E%AF%E5%A2%83/</guid>
+      <guid>https://fake-rick.github.io/posts/%E9%85%8D%E7%BD%AEisaaclab%E7%8E%AF%E5%A2%83/</guid>
       <description>&lt;p&gt;&lt;strong&gt;IsaacLab本地安装的方式有两种&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -141,9 +141,9 @@
     </item>
     <item>
       <title>Rust嵌入式开发embassy环境搭建</title>
-      <link>https://caw.ink/posts/rust%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91embassy%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+      <link>https://fake-rick.github.io/posts/rust%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91embassy%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Mon, 05 Aug 2024 14:53:08 +0800</pubDate>
-      <guid>https://caw.ink/posts/rust%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91embassy%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <guid>https://fake-rick.github.io/posts/rust%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91embassy%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;先配置Rust开发STM32所需的环境，文章地址：&lt;/li&gt;
 &lt;/ul&gt;
@@ -176,9 +176,9 @@
     </item>
     <item>
       <title>Rust配置STM32嵌入式开发环境</title>
-      <link>https://caw.ink/posts/rust%E9%85%8D%E7%BD%AEstm32%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
+      <link>https://fake-rick.github.io/posts/rust%E9%85%8D%E7%BD%AEstm32%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Sun, 04 Aug 2024 16:37:40 +0800</pubDate>
-      <guid>https://caw.ink/posts/rust%E9%85%8D%E7%BD%AEstm32%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
+      <guid>https://fake-rick.github.io/posts/rust%E9%85%8D%E7%BD%AEstm32%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
       <description>&lt;h2 id=&#34;安装&#34;&gt;安装&lt;/h2&gt;
 &lt;h3 id=&#34;安装cargo工具&#34;&gt;安装cargo工具&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;cargo install cargo-generate&lt;/code&gt;&lt;/p&gt;
@@ -208,9 +208,9 @@
     </item>
     <item>
       <title>IsaacLab创建直接工作流RL环境</title>
-      <link>https://caw.ink/posts/isaaclab%E5%88%9B%E5%BB%BA%E7%9B%B4%E6%8E%A5%E5%B7%A5%E4%BD%9C%E6%B5%81rl%E7%8E%AF%E5%A2%83/</link>
+      <link>https://fake-rick.github.io/posts/isaaclab%E5%88%9B%E5%BB%BA%E7%9B%B4%E6%8E%A5%E5%B7%A5%E4%BD%9C%E6%B5%81rl%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Sun, 21 Jul 2024 19:23:22 +0800</pubDate>
-      <guid>https://caw.ink/posts/isaaclab%E5%88%9B%E5%BB%BA%E7%9B%B4%E6%8E%A5%E5%B7%A5%E4%BD%9C%E6%B5%81rl%E7%8E%AF%E5%A2%83/</guid>
+      <guid>https://fake-rick.github.io/posts/isaaclab%E5%88%9B%E5%BB%BA%E7%9B%B4%E6%8E%A5%E5%B7%A5%E4%BD%9C%E6%B5%81rl%E7%8E%AF%E5%A2%83/</guid>
       <description>&lt;p&gt;原文地址：&lt;a href=&#34;https://isaac-sim.github.io/IsaacLab/source/tutorials/03_envs/create_direct_rl_env.html&#34;&gt;https://isaac-sim.github.io/IsaacLab/source/tutorials/03_envs/create_direct_rl_env.html&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;从环境中获取信息观察&#34;&gt;从环境中获取信息（观察）&lt;/h2&gt;
 &lt;h3 id=&#34;获取joint铰链信息位置和速度&#34;&gt;获取joint（铰链）信息：位置和速度&lt;/h3&gt;
@@ -244,9 +244,9 @@
     </item>
     <item>
       <title>Park变换</title>
-      <link>https://caw.ink/posts/park%E5%8F%98%E6%8D%A2/</link>
+      <link>https://fake-rick.github.io/posts/park%E5%8F%98%E6%8D%A2/</link>
       <pubDate>Thu, 18 Jul 2024 10:55:56 +0800</pubDate>
-      <guid>https://caw.ink/posts/park%E5%8F%98%E6%8D%A2/</guid>
+      <guid>https://fake-rick.github.io/posts/park%E5%8F%98%E6%8D%A2/</guid>
       <description>&lt;h2 id=&#34;park变换&#34;&gt;Park变换&lt;/h2&gt;
 &lt;p&gt;Park变换的目的是将Clark变换后的αβ坐标系转换成d,q旋转坐标系。d轴方向与转子磁链方向重合，所以d轴也叫直轴。q轴方向与转子磁链方向垂直，所以q轴又叫交轴。&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;./imgs/a.png&#34; alt=&#34;&#34;  /&gt;
@@ -265,9 +265,9 @@ $$&lt;p&gt;所以向量p到d轴的投影为：$oa \times \cos(\theta) + ap \time
     </item>
     <item>
       <title>Clark变换矩阵</title>
-      <link>https://caw.ink/posts/clark%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5/</link>
+      <link>https://fake-rick.github.io/posts/clark%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5/</link>
       <pubDate>Thu, 18 Jul 2024 10:09:12 +0800</pubDate>
-      <guid>https://caw.ink/posts/clark%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5/</guid>
+      <guid>https://fake-rick.github.io/posts/clark%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5/</guid>
       <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;./imgs/a.png&#34; alt=&#34;&#34;  /&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;什么是clark变换&#34;&gt;什么是Clark变换？&lt;/h2&gt;
@@ -293,9 +293,9 @@ $$&lt;p&gt;坐标转换公式为：&lt;/p&gt;</description>
     </item>
     <item>
       <title>Qt使用Keepalive机制实现断线重连</title>
-      <link>https://caw.ink/posts/qt%E4%BD%BF%E7%94%A8keepalive%E6%9C%BA%E5%88%B6%E5%AE%9E%E7%8E%B0%E6%96%AD%E7%BA%BF%E9%87%8D%E8%BF%9E/</link>
+      <link>https://fake-rick.github.io/posts/qt%E4%BD%BF%E7%94%A8keepalive%E6%9C%BA%E5%88%B6%E5%AE%9E%E7%8E%B0%E6%96%AD%E7%BA%BF%E9%87%8D%E8%BF%9E/</link>
       <pubDate>Tue, 16 Jul 2024 14:48:05 +0800</pubDate>
-      <guid>https://caw.ink/posts/qt%E4%BD%BF%E7%94%A8keepalive%E6%9C%BA%E5%88%B6%E5%AE%9E%E7%8E%B0%E6%96%AD%E7%BA%BF%E9%87%8D%E8%BF%9E/</guid>
+      <guid>https://fake-rick.github.io/posts/qt%E4%BD%BF%E7%94%A8keepalive%E6%9C%BA%E5%88%B6%E5%AE%9E%E7%8E%B0%E6%96%AD%E7%BA%BF%E9%87%8D%E8%BF%9E/</guid>
       <description>&lt;p&gt;&lt;code&gt;QTcpSocket&lt;/code&gt;能够检测到Socket的连接与断开状态，并触发相关信号，我们只需要关联信号与槽就能够知道连接状态。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;connect(&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;m_socket, &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;QTcpSocket&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;connected, &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;, &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;TcpClient&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;onConnected, Qt&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;QueuedConnection);
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;connect(&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;m_socket, &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;QTcpSocket&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;disconnected, &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;, &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;TcpClient&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;onDisconnected, Qt&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;QueuedConnection);
