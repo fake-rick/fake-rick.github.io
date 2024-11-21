@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Fake瑞克的技术博客</title>
-    <link>https://fake-rick.github.io/tags/</link>
+    <link>https://caw.ink/tags/</link>
     <description>Recent content in Tags on Fake瑞克的技术博客</description>
     <image>
       <title>Fake瑞克的技术博客</title>
@@ -12,110 +12,110 @@
     <generator>Hugo -- 0.139.0</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 20 Nov 2024 01:25:37 +0800</lastBuildDate>
-    <atom:link href="https://fake-rick.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://caw.ink/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Isaaclab</title>
-      <link>https://fake-rick.github.io/tags/isaaclab/</link>
+      <link>https://caw.ink/tags/isaaclab/</link>
       <pubDate>Wed, 20 Nov 2024 01:25:37 +0800</pubDate>
-      <guid>https://fake-rick.github.io/tags/isaaclab/</guid>
+      <guid>https://caw.ink/tags/isaaclab/</guid>
       <description></description>
     </item>
     <item>
       <title>Isaacsim</title>
-      <link>https://fake-rick.github.io/tags/isaacsim/</link>
+      <link>https://caw.ink/tags/isaacsim/</link>
       <pubDate>Wed, 20 Nov 2024 01:25:37 +0800</pubDate>
-      <guid>https://fake-rick.github.io/tags/isaacsim/</guid>
+      <guid>https://caw.ink/tags/isaacsim/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>https://fake-rick.github.io/tags/python/</link>
+      <link>https://caw.ink/tags/python/</link>
       <pubDate>Wed, 20 Nov 2024 01:25:37 +0800</pubDate>
-      <guid>https://fake-rick.github.io/tags/python/</guid>
+      <guid>https://caw.ink/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Rl</title>
-      <link>https://fake-rick.github.io/tags/rl/</link>
+      <link>https://caw.ink/tags/rl/</link>
       <pubDate>Wed, 20 Nov 2024 01:25:37 +0800</pubDate>
-      <guid>https://fake-rick.github.io/tags/rl/</guid>
+      <guid>https://caw.ink/tags/rl/</guid>
       <description></description>
     </item>
     <item>
       <title>Tutorial</title>
-      <link>https://fake-rick.github.io/tags/tutorial/</link>
+      <link>https://caw.ink/tags/tutorial/</link>
       <pubDate>Wed, 20 Nov 2024 01:25:37 +0800</pubDate>
-      <guid>https://fake-rick.github.io/tags/tutorial/</guid>
+      <guid>https://caw.ink/tags/tutorial/</guid>
       <description></description>
     </item>
     <item>
       <title>Rust</title>
-      <link>https://fake-rick.github.io/tags/rust/</link>
+      <link>https://caw.ink/tags/rust/</link>
       <pubDate>Mon, 05 Aug 2024 14:53:08 +0800</pubDate>
-      <guid>https://fake-rick.github.io/tags/rust/</guid>
+      <guid>https://caw.ink/tags/rust/</guid>
       <description></description>
     </item>
     <item>
       <title>Stm32</title>
-      <link>https://fake-rick.github.io/tags/stm32/</link>
+      <link>https://caw.ink/tags/stm32/</link>
       <pubDate>Mon, 05 Aug 2024 14:53:08 +0800</pubDate>
-      <guid>https://fake-rick.github.io/tags/stm32/</guid>
+      <guid>https://caw.ink/tags/stm32/</guid>
       <description></description>
     </item>
     <item>
       <title>Bldc</title>
-      <link>https://fake-rick.github.io/tags/bldc/</link>
+      <link>https://caw.ink/tags/bldc/</link>
       <pubDate>Thu, 18 Jul 2024 10:55:56 +0800</pubDate>
-      <guid>https://fake-rick.github.io/tags/bldc/</guid>
+      <guid>https://caw.ink/tags/bldc/</guid>
       <description></description>
     </item>
     <item>
       <title>Foc</title>
-      <link>https://fake-rick.github.io/tags/foc/</link>
+      <link>https://caw.ink/tags/foc/</link>
       <pubDate>Thu, 18 Jul 2024 10:55:56 +0800</pubDate>
-      <guid>https://fake-rick.github.io/tags/foc/</guid>
+      <guid>https://caw.ink/tags/foc/</guid>
       <description></description>
     </item>
     <item>
       <title>Park</title>
-      <link>https://fake-rick.github.io/tags/park/</link>
+      <link>https://caw.ink/tags/park/</link>
       <pubDate>Thu, 18 Jul 2024 10:55:56 +0800</pubDate>
-      <guid>https://fake-rick.github.io/tags/park/</guid>
+      <guid>https://caw.ink/tags/park/</guid>
       <description></description>
     </item>
     <item>
       <title>Clark</title>
-      <link>https://fake-rick.github.io/tags/clark/</link>
+      <link>https://caw.ink/tags/clark/</link>
       <pubDate>Thu, 18 Jul 2024 10:09:12 +0800</pubDate>
-      <guid>https://fake-rick.github.io/tags/clark/</guid>
+      <guid>https://caw.ink/tags/clark/</guid>
       <description></description>
     </item>
     <item>
       <title>C&#43;&#43;</title>
-      <link>https://fake-rick.github.io/tags/c&#43;&#43;/</link>
+      <link>https://caw.ink/tags/c&#43;&#43;/</link>
       <pubDate>Tue, 16 Jul 2024 14:48:05 +0800</pubDate>
-      <guid>https://fake-rick.github.io/tags/c&#43;&#43;/</guid>
+      <guid>https://caw.ink/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     <item>
       <title>Keepalive</title>
-      <link>https://fake-rick.github.io/tags/keepalive/</link>
+      <link>https://caw.ink/tags/keepalive/</link>
       <pubDate>Tue, 16 Jul 2024 14:48:05 +0800</pubDate>
-      <guid>https://fake-rick.github.io/tags/keepalive/</guid>
+      <guid>https://caw.ink/tags/keepalive/</guid>
       <description></description>
     </item>
     <item>
       <title>Qt</title>
-      <link>https://fake-rick.github.io/tags/qt/</link>
+      <link>https://caw.ink/tags/qt/</link>
       <pubDate>Tue, 16 Jul 2024 14:48:05 +0800</pubDate>
-      <guid>https://fake-rick.github.io/tags/qt/</guid>
+      <guid>https://caw.ink/tags/qt/</guid>
       <description></description>
     </item>
     <item>
       <title>Tcp</title>
-      <link>https://fake-rick.github.io/tags/tcp/</link>
+      <link>https://caw.ink/tags/tcp/</link>
       <pubDate>Tue, 16 Jul 2024 14:48:05 +0800</pubDate>
-      <guid>https://fake-rick.github.io/tags/tcp/</guid>
+      <guid>https://caw.ink/tags/tcp/</guid>
       <description></description>
     </item>
   </channel>

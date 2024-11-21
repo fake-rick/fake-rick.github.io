@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Foc on Fake瑞克的技术博客</title>
-    <link>https://fake-rick.github.io/tags/foc/</link>
+    <link>https://caw.ink/tags/foc/</link>
     <description>Recent content in Foc on Fake瑞克的技术博客</description>
     <image>
       <title>Fake瑞克的技术博客</title>
@@ -12,12 +12,12 @@
     <generator>Hugo -- 0.139.0</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 18 Jul 2024 10:55:56 +0800</lastBuildDate>
-    <atom:link href="https://fake-rick.github.io/tags/foc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://caw.ink/tags/foc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Park变换</title>
-      <link>https://fake-rick.github.io/posts/park%E5%8F%98%E6%8D%A2/</link>
+      <link>https://caw.ink/posts/park%E5%8F%98%E6%8D%A2/</link>
       <pubDate>Thu, 18 Jul 2024 10:55:56 +0800</pubDate>
-      <guid>https://fake-rick.github.io/posts/park%E5%8F%98%E6%8D%A2/</guid>
+      <guid>https://caw.ink/posts/park%E5%8F%98%E6%8D%A2/</guid>
       <description>&lt;h2 id=&#34;park变换&#34;&gt;Park变换&lt;/h2&gt;
 &lt;p&gt;Park变换的目的是将Clark变换后的αβ坐标系转换成d,q旋转坐标系。d轴方向与转子磁链方向重合，所以d轴也叫直轴。q轴方向与转子磁链方向垂直，所以q轴又叫交轴。&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;./imgs/a.png&#34; alt=&#34;&#34;  /&gt;
@@ -36,9 +36,9 @@ $$&lt;p&gt;所以向量p到d轴的投影为：$oa \times \cos(\theta) + ap \time
     </item>
     <item>
       <title>Clark变换矩阵</title>
-      <link>https://fake-rick.github.io/posts/clark%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5/</link>
+      <link>https://caw.ink/posts/clark%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5/</link>
       <pubDate>Thu, 18 Jul 2024 10:09:12 +0800</pubDate>
-      <guid>https://fake-rick.github.io/posts/clark%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5/</guid>
+      <guid>https://caw.ink/posts/clark%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5/</guid>
       <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;./imgs/a.png&#34; alt=&#34;&#34;  /&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;什么是clark变换&#34;&gt;什么是Clark变换？&lt;/h2&gt;

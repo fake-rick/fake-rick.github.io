@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Stm32 on Fake瑞克的技术博客</title>
-    <link>https://fake-rick.github.io/categories/stm32/</link>
+    <link>https://caw.ink/categories/stm32/</link>
     <description>Recent content in Stm32 on Fake瑞克的技术博客</description>
     <image>
       <title>Fake瑞克的技术博客</title>
@@ -12,12 +12,12 @@
     <generator>Hugo -- 0.139.0</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 05 Aug 2024 14:53:08 +0800</lastBuildDate>
-    <atom:link href="https://fake-rick.github.io/categories/stm32/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://caw.ink/categories/stm32/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rust嵌入式开发embassy环境搭建</title>
-      <link>https://fake-rick.github.io/posts/rust%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91embassy%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+      <link>https://caw.ink/posts/rust%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91embassy%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Mon, 05 Aug 2024 14:53:08 +0800</pubDate>
-      <guid>https://fake-rick.github.io/posts/rust%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91embassy%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <guid>https://caw.ink/posts/rust%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91embassy%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;先配置Rust开发STM32所需的环境，文章地址：&lt;/li&gt;
 &lt;/ul&gt;
@@ -50,9 +50,9 @@
     </item>
     <item>
       <title>Rust配置STM32嵌入式开发环境</title>
-      <link>https://fake-rick.github.io/posts/rust%E9%85%8D%E7%BD%AEstm32%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
+      <link>https://caw.ink/posts/rust%E9%85%8D%E7%BD%AEstm32%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Sun, 04 Aug 2024 16:37:40 +0800</pubDate>
-      <guid>https://fake-rick.github.io/posts/rust%E9%85%8D%E7%BD%AEstm32%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
+      <guid>https://caw.ink/posts/rust%E9%85%8D%E7%BD%AEstm32%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
       <description>&lt;h2 id=&#34;安装&#34;&gt;安装&lt;/h2&gt;
 &lt;h3 id=&#34;安装cargo工具&#34;&gt;安装cargo工具&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;cargo install cargo-generate&lt;/code&gt;&lt;/p&gt;

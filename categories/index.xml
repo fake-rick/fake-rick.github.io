@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Fake瑞克的技术博客</title>
-    <link>https://fake-rick.github.io/categories/</link>
+    <link>https://caw.ink/categories/</link>
     <description>Recent content in Categories on Fake瑞克的技术博客</description>
     <image>
       <title>Fake瑞克的技术博客</title>
@@ -12,40 +12,40 @@
     <generator>Hugo -- 0.139.0</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 20 Nov 2024 01:25:37 +0800</lastBuildDate>
-    <atom:link href="https://fake-rick.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://caw.ink/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IsaacLab Tutorial</title>
-      <link>https://fake-rick.github.io/categories/isaaclab-tutorial/</link>
+      <link>https://caw.ink/categories/isaaclab-tutorial/</link>
       <pubDate>Wed, 20 Nov 2024 01:25:37 +0800</pubDate>
-      <guid>https://fake-rick.github.io/categories/isaaclab-tutorial/</guid>
+      <guid>https://caw.ink/categories/isaaclab-tutorial/</guid>
       <description></description>
     </item>
     <item>
       <title>Stm32</title>
-      <link>https://fake-rick.github.io/categories/stm32/</link>
+      <link>https://caw.ink/categories/stm32/</link>
       <pubDate>Mon, 05 Aug 2024 14:53:08 +0800</pubDate>
-      <guid>https://fake-rick.github.io/categories/stm32/</guid>
+      <guid>https://caw.ink/categories/stm32/</guid>
       <description></description>
     </item>
     <item>
       <title>IsaacLab</title>
-      <link>https://fake-rick.github.io/categories/isaaclab/</link>
+      <link>https://caw.ink/categories/isaaclab/</link>
       <pubDate>Sun, 21 Jul 2024 19:23:22 +0800</pubDate>
-      <guid>https://fake-rick.github.io/categories/isaaclab/</guid>
+      <guid>https://caw.ink/categories/isaaclab/</guid>
       <description></description>
     </item>
     <item>
       <title>Power Electronics</title>
-      <link>https://fake-rick.github.io/categories/power-electronics/</link>
+      <link>https://caw.ink/categories/power-electronics/</link>
       <pubDate>Thu, 18 Jul 2024 10:55:56 +0800</pubDate>
-      <guid>https://fake-rick.github.io/categories/power-electronics/</guid>
+      <guid>https://caw.ink/categories/power-electronics/</guid>
       <description></description>
     </item>
     <item>
       <title>Software Design</title>
-      <link>https://fake-rick.github.io/categories/software-design/</link>
+      <link>https://caw.ink/categories/software-design/</link>
       <pubDate>Tue, 16 Jul 2024 14:48:05 +0800</pubDate>
-      <guid>https://fake-rick.github.io/categories/software-design/</guid>
+      <guid>https://caw.ink/categories/software-design/</guid>
       <description></description>
     </item>
   </channel>

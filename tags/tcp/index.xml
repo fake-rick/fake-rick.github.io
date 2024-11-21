@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tcp on Fake瑞克的技术博客</title>
-    <link>https://fake-rick.github.io/tags/tcp/</link>
+    <link>https://caw.ink/tags/tcp/</link>
     <description>Recent content in Tcp on Fake瑞克的技术博客</description>
     <image>
       <title>Fake瑞克的技术博客</title>
@@ -12,12 +12,12 @@
     <generator>Hugo -- 0.139.0</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 16 Jul 2024 14:48:05 +0800</lastBuildDate>
-    <atom:link href="https://fake-rick.github.io/tags/tcp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://caw.ink/tags/tcp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Qt使用Keepalive机制实现断线重连</title>
-      <link>https://fake-rick.github.io/posts/qt%E4%BD%BF%E7%94%A8keepalive%E6%9C%BA%E5%88%B6%E5%AE%9E%E7%8E%B0%E6%96%AD%E7%BA%BF%E9%87%8D%E8%BF%9E/</link>
+      <link>https://caw.ink/posts/qt%E4%BD%BF%E7%94%A8keepalive%E6%9C%BA%E5%88%B6%E5%AE%9E%E7%8E%B0%E6%96%AD%E7%BA%BF%E9%87%8D%E8%BF%9E/</link>
       <pubDate>Tue, 16 Jul 2024 14:48:05 +0800</pubDate>
-      <guid>https://fake-rick.github.io/posts/qt%E4%BD%BF%E7%94%A8keepalive%E6%9C%BA%E5%88%B6%E5%AE%9E%E7%8E%B0%E6%96%AD%E7%BA%BF%E9%87%8D%E8%BF%9E/</guid>
+      <guid>https://caw.ink/posts/qt%E4%BD%BF%E7%94%A8keepalive%E6%9C%BA%E5%88%B6%E5%AE%9E%E7%8E%B0%E6%96%AD%E7%BA%BF%E9%87%8D%E8%BF%9E/</guid>
       <description>&lt;p&gt;&lt;code&gt;QTcpSocket&lt;/code&gt;能够检测到Socket的连接与断开状态，并触发相关信号，我们只需要关联信号与槽就能够知道连接状态。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;connect(&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;m_socket, &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;QTcpSocket&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;connected, &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;, &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;TcpClient&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;onConnected, Qt&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;QueuedConnection);
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;connect(&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;m_socket, &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;QTcpSocket&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;disconnected, &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;, &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;TcpClient&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;onDisconnected, Qt&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;QueuedConnection);
