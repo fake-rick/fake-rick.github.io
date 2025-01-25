@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.142.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 20 Nov 2024 01:25:37 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jan 2025 19:15:07 +0800</lastBuildDate>
     <atom:link href="https://fake-rick.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qt</title>
+      <link>https://fake-rick.github.io/categories/qt/</link>
+      <pubDate>Sat, 25 Jan 2025 19:15:07 +0800</pubDate>
+      <guid>https://fake-rick.github.io/categories/qt/</guid>
+      <description></description>
+    </item>
     <item>
       <title>IsaacLab Tutorial</title>
       <link>https://fake-rick.github.io/categories/isaaclab-tutorial/</link>
