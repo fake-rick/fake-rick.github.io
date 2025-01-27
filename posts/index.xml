@@ -11,8 +11,83 @@
     </image>
     <generator>Hugo -- 0.142.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 25 Jan 2025 19:15:07 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jan 2025 03:27:30 +0800</lastBuildDate>
     <atom:link href="https://fake-rick.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>行星减速器设计</title>
+      <link>https://fake-rick.github.io/posts/%E8%A1%8C%E6%98%9F%E5%87%8F%E9%80%9F%E5%99%A8%E8%AE%BE%E8%AE%A1/</link>
+      <pubDate>Mon, 27 Jan 2025 03:27:30 +0800</pubDate>
+      <guid>https://fake-rick.github.io/posts/%E8%A1%8C%E6%98%9F%E5%87%8F%E9%80%9F%E5%99%A8%E8%AE%BE%E8%AE%A1/</guid>
+      <description>&lt;p&gt;现代机器人的一个核心部件就是就是关节电机，在关节电机中会用到减速器，行星减速器就是最常见的一种。&lt;/p&gt;
+&lt;p&gt;本文针对行星减速器的一种情况进行讲解：行星架固定，太阳轮作为输入，行星架作为输出。&lt;/p&gt;
+&lt;h2 id=&#34;基础概念&#34;&gt;基础概念&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;名称&lt;/th&gt;
+          &lt;th&gt;描述&lt;/th&gt;
+          &lt;th&gt;符号&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;齿数（Number of teeth）&lt;/td&gt;
+          &lt;td&gt;齿轮齿的数量&lt;/td&gt;
+          &lt;td&gt;Z&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;模数（Module）&lt;/td&gt;
+          &lt;td&gt;决定齿大小的因数&lt;/td&gt;
+          &lt;td&gt;M&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;直径&lt;/td&gt;
+          &lt;td&gt;齿轮分度圆直径&lt;/td&gt;
+          &lt;td&gt;D&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;上述关系可以表示为：$D = M \times Z$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这个公式在设计行星减速器时非常重要请牢记&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;要是两个齿轮啮合，它们必须拥有相同的模数（Module）：&lt;/p&gt;
+$$
+M_1 = M_2 \\
+\therefore \frac{D_1}{Z_1} = \frac{D_2}{Z_2} \\
+\therefore \frac{Z_2}{Z_1} = \frac{D_2}{D_1} = \frac{2R_2}{2R_1} = \frac{R_2}{R_1}
+$$&lt;h2 id=&#34;行星减速器组件&#34;&gt;行星减速器组件&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;名称&lt;/th&gt;
+          &lt;th&gt;符号&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;太阳轮（Sun）&lt;/td&gt;
+          &lt;td&gt;S&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;行星轮（Planet）&lt;/td&gt;
+          &lt;td&gt;P&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;齿圈（Ring）&lt;/td&gt;
+          &lt;td&gt;R&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;行星架（Carrier）&lt;/td&gt;
+          &lt;td&gt;C&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;半径关系&#34;&gt;半径关系&lt;/h2&gt;
+$$
+r_R = r_S + 2 r_P \\
+2 r_P = r_R - r_S
+$$&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;./imgs/1.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;</description>
+    </item>
     <item>
       <title>windows系统vtk-v9.1.0使用Qt5.15.2自带mingw810_64进行编译</title>
       <link>https://fake-rick.github.io/posts/windows%E7%B3%BB%E7%BB%9Fvtk-v9.1.0%E4%BD%BF%E7%94%A8qt5.15.2%E8%87%AA%E5%B8%A6mingw810_64%E8%BF%9B%E8%A1%8C%E7%BC%96%E8%AF%91/</link>

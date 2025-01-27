@@ -11,8 +11,29 @@
     </image>
     <generator>Hugo -- 0.142.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 25 Jan 2025 19:15:07 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jan 2025 03:27:30 +0800</lastBuildDate>
     <atom:link href="https://fake-rick.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bldc</title>
+      <link>https://fake-rick.github.io/tags/bldc/</link>
+      <pubDate>Mon, 27 Jan 2025 03:27:30 +0800</pubDate>
+      <guid>https://fake-rick.github.io/tags/bldc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Motor</title>
+      <link>https://fake-rick.github.io/tags/motor/</link>
+      <pubDate>Mon, 27 Jan 2025 03:27:30 +0800</pubDate>
+      <guid>https://fake-rick.github.io/tags/motor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reducer</title>
+      <link>https://fake-rick.github.io/tags/reducer/</link>
+      <pubDate>Mon, 27 Jan 2025 03:27:30 +0800</pubDate>
+      <guid>https://fake-rick.github.io/tags/reducer/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Qt</title>
       <link>https://fake-rick.github.io/tags/qt/</link>
@@ -74,13 +95,6 @@
       <link>https://fake-rick.github.io/tags/stm32/</link>
       <pubDate>Mon, 05 Aug 2024 14:53:08 +0800</pubDate>
       <guid>https://fake-rick.github.io/tags/stm32/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Bldc</title>
-      <link>https://fake-rick.github.io/tags/bldc/</link>
-      <pubDate>Thu, 18 Jul 2024 10:55:56 +0800</pubDate>
-      <guid>https://fake-rick.github.io/tags/bldc/</guid>
       <description></description>
     </item>
     <item>
