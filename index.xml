@@ -47,7 +47,7 @@
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;上述关系可以表示为：$D = M \times Z$&lt;/p&gt;
+&lt;p&gt;上述关系可以表示为：\( D = M \times Z \)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;这个公式在设计行星减速器时非常重要请牢记&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;要是两个齿轮啮合，它们必须拥有相同的模数（Module）：&lt;/p&gt;
 $$
