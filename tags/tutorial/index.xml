@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tutorial on Fake瑞克的技术博客</title>
     <link>https://fake-rick.github.io/tags/tutorial/</link>
     <description>Recent content in Tutorial on Fake瑞克的技术博客</description>
-    <generator>Hugo</generator>
+    <image>
+      <title>Fake瑞克的技术博客</title>
+      <url>https://avatars.githubusercontent.com/u/44377946</url>
+      <link>https://avatars.githubusercontent.com/u/44377946</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 20 Nov 2024 01:25:37 +0800</lastBuildDate>
     <atom:link href="https://fake-rick.github.io/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,126 @@
       <link>https://fake-rick.github.io/posts/%E9%85%8D%E7%BD%AEisaaclab%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Wed, 20 Nov 2024 01:25:37 +0800</pubDate>
       <guid>https://fake-rick.github.io/posts/%E9%85%8D%E7%BD%AEisaaclab%E7%8E%AF%E5%A2%83/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;IsaacLab本地安装的方式有两种&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;通过PIP安装&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;二进制安装&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;本次课程将使用二进制安装&lt;/p&gt;&#xA;&lt;h2 id=&#34;安装要求&#34;&gt;安装要求&lt;/h2&gt;&#xA;&lt;h2 id=&#34;系统要求&#34;&gt;系统要求&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Element&lt;/th&gt;&#xA;          &lt;th&gt;Minimum Spec&lt;/th&gt;&#xA;          &lt;th&gt;Good&lt;/th&gt;&#xA;          &lt;th&gt;Ideal&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;OS&lt;/td&gt;&#xA;          &lt;td&gt;Ubuntu 20.04/22.04、Windows 10/11&lt;/td&gt;&#xA;          &lt;td&gt;Ubuntu 20.04/22.04、Windows 10/11&lt;/td&gt;&#xA;          &lt;td&gt;Ubuntu 20.04/22.04、Windows 10/11&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;CPU&lt;/td&gt;&#xA;          &lt;td&gt;Intel Core i7 (7th Generation)、AMD Ryzen 5&lt;/td&gt;&#xA;          &lt;td&gt;Intel Core i7 (9th Generation)、AMD Ryzen 7&lt;/td&gt;&#xA;          &lt;td&gt;Intel Core i9, X-series or higher、AMD Ryzen 9, Threadripper or higher&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Cores&lt;/td&gt;&#xA;          &lt;td&gt;4&lt;/td&gt;&#xA;          &lt;td&gt;8&lt;/td&gt;&#xA;          &lt;td&gt;16&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;RAM&lt;/td&gt;&#xA;          &lt;td&gt;32GB*&lt;/td&gt;&#xA;          &lt;td&gt;64GB*&lt;/td&gt;&#xA;          &lt;td&gt;64GB*&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Storage&lt;/td&gt;&#xA;          &lt;td&gt;50GB SSD&lt;/td&gt;&#xA;          &lt;td&gt;500GB SSD&lt;/td&gt;&#xA;          &lt;td&gt;1TB NVMe SSD&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;GPU&lt;/td&gt;&#xA;          &lt;td&gt;GeForce RTX 3070&lt;/td&gt;&#xA;          &lt;td&gt;GeForce RTX 4080&lt;/td&gt;&#xA;          &lt;td&gt;RTX Ada 6000&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;VRAM&lt;/td&gt;&#xA;          &lt;td&gt;8GB*&lt;/td&gt;&#xA;          &lt;td&gt;16GB*&lt;/td&gt;&#xA;          &lt;td&gt;48GB*&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;本机配置&#34;&gt;本机配置&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;&lt;/th&gt;&#xA;          &lt;th&gt;描述&lt;/th&gt;&#xA;          &lt;th&gt;地址&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;显卡&lt;/td&gt;&#xA;          &lt;td&gt;RTX 3080 Ti&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;操作系统&lt;/td&gt;&#xA;          &lt;td&gt;PopOS（一款基于Ubuntu的操作系统）&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://pop.system76.com&#34;&gt;https://pop.system76.com&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;IsaacSim&lt;/td&gt;&#xA;          &lt;td&gt;4.2.0&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://developer.nvidia.com/omniverse#section-getting-started&#34;&gt;https://developer.nvidia.com/omniverse#section-getting-started&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;IsaacLab&lt;/td&gt;&#xA;          &lt;td&gt;最新的main分支&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://github.com/isaac-sim/IsaacLab&#34;&gt;https://github.com/isaac-sim/IsaacLab&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Anaconda&lt;/td&gt;&#xA;          &lt;td&gt;Anaconda3-2024.10-1-Linux-x86_64&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://docs.anaconda.com/anaconda/install&#34;&gt;https://docs.anaconda.com/anaconda/install&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;-开始安装&#34;&gt;🎉 开始安装！&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-anaconda安装linux&#34;&gt;1. Anaconda安装（Linux）&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 安装依赖&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 下载 &amp;amp; 安装anaconda&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl -O https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bash ~/Anaconda3-2024.10-1-Linux-x86_64.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 刷新环境变量&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;source ~/.zshrc &lt;span style=&#34;color:#75715e&#34;&gt;# 或source ~/.bashrc&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;2-安装omniverse-launcher&#34;&gt;2. 安装Omniverse Launcher&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 下载Omniverse Launcher&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wget https://install.launcher.omniverse.nvidia.com/installers/omniverse-launcher-linux.AppImage&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 添加可执行权限&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; chmod +x omniverse-launcher-linux.AppImage&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 运行&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./omniverse-launcher-linux.AppImage&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;运行后出现如下界面，然后输入邮箱账号登陆（没注册过的需要先注册）&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;IsaacLab本地安装的方式有两种&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;通过PIP安装&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;二进制安装&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;本次课程将使用二进制安装&lt;/p&gt;
+&lt;h2 id=&#34;安装要求&#34;&gt;安装要求&lt;/h2&gt;
+&lt;h2 id=&#34;系统要求&#34;&gt;系统要求&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Element&lt;/th&gt;
+          &lt;th&gt;Minimum Spec&lt;/th&gt;
+          &lt;th&gt;Good&lt;/th&gt;
+          &lt;th&gt;Ideal&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;OS&lt;/td&gt;
+          &lt;td&gt;Ubuntu 20.04/22.04、Windows 10/11&lt;/td&gt;
+          &lt;td&gt;Ubuntu 20.04/22.04、Windows 10/11&lt;/td&gt;
+          &lt;td&gt;Ubuntu 20.04/22.04、Windows 10/11&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;CPU&lt;/td&gt;
+          &lt;td&gt;Intel Core i7 (7th Generation)、AMD Ryzen 5&lt;/td&gt;
+          &lt;td&gt;Intel Core i7 (9th Generation)、AMD Ryzen 7&lt;/td&gt;
+          &lt;td&gt;Intel Core i9, X-series or higher、AMD Ryzen 9, Threadripper or higher&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Cores&lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;8&lt;/td&gt;
+          &lt;td&gt;16&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RAM&lt;/td&gt;
+          &lt;td&gt;32GB*&lt;/td&gt;
+          &lt;td&gt;64GB*&lt;/td&gt;
+          &lt;td&gt;64GB*&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Storage&lt;/td&gt;
+          &lt;td&gt;50GB SSD&lt;/td&gt;
+          &lt;td&gt;500GB SSD&lt;/td&gt;
+          &lt;td&gt;1TB NVMe SSD&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;GPU&lt;/td&gt;
+          &lt;td&gt;GeForce RTX 3070&lt;/td&gt;
+          &lt;td&gt;GeForce RTX 4080&lt;/td&gt;
+          &lt;td&gt;RTX Ada 6000&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;VRAM&lt;/td&gt;
+          &lt;td&gt;8GB*&lt;/td&gt;
+          &lt;td&gt;16GB*&lt;/td&gt;
+          &lt;td&gt;48GB*&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;本机配置&#34;&gt;本机配置&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;描述&lt;/th&gt;
+          &lt;th&gt;地址&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;显卡&lt;/td&gt;
+          &lt;td&gt;RTX 3080 Ti&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;操作系统&lt;/td&gt;
+          &lt;td&gt;PopOS（一款基于Ubuntu的操作系统）&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://pop.system76.com&#34;&gt;https://pop.system76.com&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;IsaacSim&lt;/td&gt;
+          &lt;td&gt;4.2.0&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://developer.nvidia.com/omniverse#section-getting-started&#34;&gt;https://developer.nvidia.com/omniverse#section-getting-started&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;IsaacLab&lt;/td&gt;
+          &lt;td&gt;最新的main分支&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/isaac-sim/IsaacLab&#34;&gt;https://github.com/isaac-sim/IsaacLab&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Anaconda&lt;/td&gt;
+          &lt;td&gt;Anaconda3-2024.10-1-Linux-x86_64&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://docs.anaconda.com/anaconda/install&#34;&gt;https://docs.anaconda.com/anaconda/install&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;-开始安装&#34;&gt;🎉 开始安装！&lt;/h2&gt;
+&lt;h3 id=&#34;1-anaconda安装linux&#34;&gt;1. Anaconda安装（Linux）&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 安装依赖&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 下载 &amp;amp; 安装anaconda&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl -O https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bash ~/Anaconda3-2024.10-1-Linux-x86_64.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 刷新环境变量&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;source ~/.zshrc &lt;span style=&#34;color:#75715e&#34;&gt;# 或source ~/.bashrc&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;2-安装omniverse-launcher&#34;&gt;2. 安装Omniverse Launcher&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 下载Omniverse Launcher&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wget https://install.launcher.omniverse.nvidia.com/installers/omniverse-launcher-linux.AppImage
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 添加可执行权限&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; chmod +x omniverse-launcher-linux.AppImage
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 运行&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./omniverse-launcher-linux.AppImage
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;运行后出现如下界面，然后输入邮箱账号登陆（没注册过的需要先注册）&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

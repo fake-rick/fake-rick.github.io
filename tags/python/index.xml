@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Python on Fake瑞克的技术博客</title>
     <link>https://fake-rick.github.io/tags/python/</link>
     <description>Recent content in Python on Fake瑞克的技术博客</description>
-    <generator>Hugo</generator>
+    <image>
+      <title>Fake瑞克的技术博客</title>
+      <url>https://avatars.githubusercontent.com/u/44377946</url>
+      <link>https://avatars.githubusercontent.com/u/44377946</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 20 Nov 2024 01:25:37 +0800</lastBuildDate>
     <atom:link href="https://fake-rick.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
@@ -13,28 +18,211 @@
       <link>https://fake-rick.github.io/posts/%E9%85%8D%E7%BD%AEisaaclab%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Wed, 20 Nov 2024 01:25:37 +0800</pubDate>
       <guid>https://fake-rick.github.io/posts/%E9%85%8D%E7%BD%AEisaaclab%E7%8E%AF%E5%A2%83/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;IsaacLab本地安装的方式有两种&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;通过PIP安装&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;二进制安装&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;本次课程将使用二进制安装&lt;/p&gt;&#xA;&lt;h2 id=&#34;安装要求&#34;&gt;安装要求&lt;/h2&gt;&#xA;&lt;h2 id=&#34;系统要求&#34;&gt;系统要求&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Element&lt;/th&gt;&#xA;          &lt;th&gt;Minimum Spec&lt;/th&gt;&#xA;          &lt;th&gt;Good&lt;/th&gt;&#xA;          &lt;th&gt;Ideal&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;OS&lt;/td&gt;&#xA;          &lt;td&gt;Ubuntu 20.04/22.04、Windows 10/11&lt;/td&gt;&#xA;          &lt;td&gt;Ubuntu 20.04/22.04、Windows 10/11&lt;/td&gt;&#xA;          &lt;td&gt;Ubuntu 20.04/22.04、Windows 10/11&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;CPU&lt;/td&gt;&#xA;          &lt;td&gt;Intel Core i7 (7th Generation)、AMD Ryzen 5&lt;/td&gt;&#xA;          &lt;td&gt;Intel Core i7 (9th Generation)、AMD Ryzen 7&lt;/td&gt;&#xA;          &lt;td&gt;Intel Core i9, X-series or higher、AMD Ryzen 9, Threadripper or higher&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Cores&lt;/td&gt;&#xA;          &lt;td&gt;4&lt;/td&gt;&#xA;          &lt;td&gt;8&lt;/td&gt;&#xA;          &lt;td&gt;16&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;RAM&lt;/td&gt;&#xA;          &lt;td&gt;32GB*&lt;/td&gt;&#xA;          &lt;td&gt;64GB*&lt;/td&gt;&#xA;          &lt;td&gt;64GB*&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Storage&lt;/td&gt;&#xA;          &lt;td&gt;50GB SSD&lt;/td&gt;&#xA;          &lt;td&gt;500GB SSD&lt;/td&gt;&#xA;          &lt;td&gt;1TB NVMe SSD&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;GPU&lt;/td&gt;&#xA;          &lt;td&gt;GeForce RTX 3070&lt;/td&gt;&#xA;          &lt;td&gt;GeForce RTX 4080&lt;/td&gt;&#xA;          &lt;td&gt;RTX Ada 6000&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;VRAM&lt;/td&gt;&#xA;          &lt;td&gt;8GB*&lt;/td&gt;&#xA;          &lt;td&gt;16GB*&lt;/td&gt;&#xA;          &lt;td&gt;48GB*&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;本机配置&#34;&gt;本机配置&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;&lt;/th&gt;&#xA;          &lt;th&gt;描述&lt;/th&gt;&#xA;          &lt;th&gt;地址&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;显卡&lt;/td&gt;&#xA;          &lt;td&gt;RTX 3080 Ti&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;操作系统&lt;/td&gt;&#xA;          &lt;td&gt;PopOS（一款基于Ubuntu的操作系统）&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://pop.system76.com&#34;&gt;https://pop.system76.com&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;IsaacSim&lt;/td&gt;&#xA;          &lt;td&gt;4.2.0&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://developer.nvidia.com/omniverse#section-getting-started&#34;&gt;https://developer.nvidia.com/omniverse#section-getting-started&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;IsaacLab&lt;/td&gt;&#xA;          &lt;td&gt;最新的main分支&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://github.com/isaac-sim/IsaacLab&#34;&gt;https://github.com/isaac-sim/IsaacLab&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Anaconda&lt;/td&gt;&#xA;          &lt;td&gt;Anaconda3-2024.10-1-Linux-x86_64&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://docs.anaconda.com/anaconda/install&#34;&gt;https://docs.anaconda.com/anaconda/install&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;-开始安装&#34;&gt;🎉 开始安装！&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-anaconda安装linux&#34;&gt;1. Anaconda安装（Linux）&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 安装依赖&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 下载 &amp;amp; 安装anaconda&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl -O https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bash ~/Anaconda3-2024.10-1-Linux-x86_64.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 刷新环境变量&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;source ~/.zshrc &lt;span style=&#34;color:#75715e&#34;&gt;# 或source ~/.bashrc&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;2-安装omniverse-launcher&#34;&gt;2. 安装Omniverse Launcher&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 下载Omniverse Launcher&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wget https://install.launcher.omniverse.nvidia.com/installers/omniverse-launcher-linux.AppImage&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 添加可执行权限&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; chmod +x omniverse-launcher-linux.AppImage&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 运行&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./omniverse-launcher-linux.AppImage&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;运行后出现如下界面，然后输入邮箱账号登陆（没注册过的需要先注册）&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;IsaacLab本地安装的方式有两种&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;通过PIP安装&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;二进制安装&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;本次课程将使用二进制安装&lt;/p&gt;
+&lt;h2 id=&#34;安装要求&#34;&gt;安装要求&lt;/h2&gt;
+&lt;h2 id=&#34;系统要求&#34;&gt;系统要求&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Element&lt;/th&gt;
+          &lt;th&gt;Minimum Spec&lt;/th&gt;
+          &lt;th&gt;Good&lt;/th&gt;
+          &lt;th&gt;Ideal&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;OS&lt;/td&gt;
+          &lt;td&gt;Ubuntu 20.04/22.04、Windows 10/11&lt;/td&gt;
+          &lt;td&gt;Ubuntu 20.04/22.04、Windows 10/11&lt;/td&gt;
+          &lt;td&gt;Ubuntu 20.04/22.04、Windows 10/11&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;CPU&lt;/td&gt;
+          &lt;td&gt;Intel Core i7 (7th Generation)、AMD Ryzen 5&lt;/td&gt;
+          &lt;td&gt;Intel Core i7 (9th Generation)、AMD Ryzen 7&lt;/td&gt;
+          &lt;td&gt;Intel Core i9, X-series or higher、AMD Ryzen 9, Threadripper or higher&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Cores&lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;8&lt;/td&gt;
+          &lt;td&gt;16&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RAM&lt;/td&gt;
+          &lt;td&gt;32GB*&lt;/td&gt;
+          &lt;td&gt;64GB*&lt;/td&gt;
+          &lt;td&gt;64GB*&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Storage&lt;/td&gt;
+          &lt;td&gt;50GB SSD&lt;/td&gt;
+          &lt;td&gt;500GB SSD&lt;/td&gt;
+          &lt;td&gt;1TB NVMe SSD&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;GPU&lt;/td&gt;
+          &lt;td&gt;GeForce RTX 3070&lt;/td&gt;
+          &lt;td&gt;GeForce RTX 4080&lt;/td&gt;
+          &lt;td&gt;RTX Ada 6000&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;VRAM&lt;/td&gt;
+          &lt;td&gt;8GB*&lt;/td&gt;
+          &lt;td&gt;16GB*&lt;/td&gt;
+          &lt;td&gt;48GB*&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;本机配置&#34;&gt;本机配置&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;描述&lt;/th&gt;
+          &lt;th&gt;地址&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;显卡&lt;/td&gt;
+          &lt;td&gt;RTX 3080 Ti&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;操作系统&lt;/td&gt;
+          &lt;td&gt;PopOS（一款基于Ubuntu的操作系统）&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://pop.system76.com&#34;&gt;https://pop.system76.com&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;IsaacSim&lt;/td&gt;
+          &lt;td&gt;4.2.0&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://developer.nvidia.com/omniverse#section-getting-started&#34;&gt;https://developer.nvidia.com/omniverse#section-getting-started&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;IsaacLab&lt;/td&gt;
+          &lt;td&gt;最新的main分支&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/isaac-sim/IsaacLab&#34;&gt;https://github.com/isaac-sim/IsaacLab&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Anaconda&lt;/td&gt;
+          &lt;td&gt;Anaconda3-2024.10-1-Linux-x86_64&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://docs.anaconda.com/anaconda/install&#34;&gt;https://docs.anaconda.com/anaconda/install&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;-开始安装&#34;&gt;🎉 开始安装！&lt;/h2&gt;
+&lt;h3 id=&#34;1-anaconda安装linux&#34;&gt;1. Anaconda安装（Linux）&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 安装依赖&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 下载 &amp;amp; 安装anaconda&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl -O https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bash ~/Anaconda3-2024.10-1-Linux-x86_64.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 刷新环境变量&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;source ~/.zshrc &lt;span style=&#34;color:#75715e&#34;&gt;# 或source ~/.bashrc&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;2-安装omniverse-launcher&#34;&gt;2. 安装Omniverse Launcher&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 下载Omniverse Launcher&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wget https://install.launcher.omniverse.nvidia.com/installers/omniverse-launcher-linux.AppImage
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 添加可执行权限&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; chmod +x omniverse-launcher-linux.AppImage
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 运行&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./omniverse-launcher-linux.AppImage
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;运行后出现如下界面，然后输入邮箱账号登陆（没注册过的需要先注册）&lt;/p&gt;</description>
     </item>
     <item>
       <title>IsaacLab创建直接工作流RL环境</title>
       <link>https://fake-rick.github.io/posts/isaaclab%E5%88%9B%E5%BB%BA%E7%9B%B4%E6%8E%A5%E5%B7%A5%E4%BD%9C%E6%B5%81rl%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Sun, 21 Jul 2024 19:23:22 +0800</pubDate>
       <guid>https://fake-rick.github.io/posts/isaaclab%E5%88%9B%E5%BB%BA%E7%9B%B4%E6%8E%A5%E5%B7%A5%E4%BD%9C%E6%B5%81rl%E7%8E%AF%E5%A2%83/</guid>
-      <description>&lt;p&gt;原文地址：&lt;a href=&#34;https://isaac-sim.github.io/IsaacLab/source/tutorials/03_envs/create_direct_rl_env.html&#34;&gt;https://isaac-sim.github.io/IsaacLab/source/tutorials/03_envs/create_direct_rl_env.html&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;从环境中获取信息观察&#34;&gt;从环境中获取信息（观察）&lt;/h2&gt;&#xA;&lt;h3 id=&#34;获取joint铰链信息位置和速度&#34;&gt;获取joint（铰链）信息：位置和速度&lt;/h3&gt;&#xA;&lt;p&gt;joint会被包含在Articulation（关节）中，一个Articulation可能会包含1个或多个的joint对象，可以通过&lt;code&gt;Articulation.find_joints()&lt;/code&gt;方法获得joint在当前Articulation中的索引（index）数据。&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;find_joints&lt;/code&gt;的返回值是这样的：&lt;code&gt;tuple[list[joint索引], list[joint名字]]&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;find_joints的函数声明如下：&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;find_joints&lt;/span&gt;( self, name_keys: str &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; Sequence[str], joint_subset: list[str] &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;None&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;None&lt;/span&gt;, preserve_order: bool &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt; ) &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; tuple[list[int], list[str]]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在Articulation内部有一个属性私有变量&lt;code&gt;_data: ArticulationData&lt;/code&gt;，该变量通过方法&lt;code&gt;def data(self) -&amp;gt; ArticulationData&lt;/code&gt;获取，在&lt;code&gt;ArticulationData&lt;/code&gt;中存放着几个关节重要的数据：位置&lt;code&gt;ArticulationData._joint_pos&lt;/code&gt;，速度&lt;code&gt;ArticulationData._joint_vel&lt;/code&gt;，加速度&lt;code&gt;ArticulationData._joint_acc&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;在&lt;code&gt;ArticulationData&lt;/code&gt;有几个&lt;code&gt;@property&lt;/code&gt;装饰器函数，用于获取上述的三个属性，这样可以用过属性名的方式直接访问到这些数据。&lt;/p&gt;&#xA;&lt;p&gt;下面介绍下这三个方法的返回值：&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;joint_pos&lt;/code&gt;返回&lt;code&gt;torch.Size([num_instances, num_joints])&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;joint_vel&lt;/code&gt;返回&lt;code&gt;torch.Size([num_instances, num_joints])&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;joint_acc&lt;/code&gt;返回&lt;code&gt;torch.Size([num_instances, num_joints])&lt;/code&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;是时候讲解下&lt;code&gt;DirectRLEnv(gym.Env)._get_observations(self) -&amp;gt; VecEnvObs&lt;/code&gt;方法了，该方法带有&lt;code&gt;@abstractmethod&lt;/code&gt;被定义成抽象方法，所以我们在继承&lt;code&gt;DirectRLEnv&lt;/code&gt;类后必须在自己的类中实现&lt;code&gt;_get_observations&lt;/code&gt;方法。&lt;/p&gt;&#xA;&lt;p&gt;我们在&lt;code&gt;_get_observations&lt;/code&gt;方法中计算并返回观测值，这会用到上面提到的&lt;code&gt;ArticulationData&lt;/code&gt;以及如何通过&lt;code&gt;joint&lt;/code&gt;索引从中获取实际数据。&lt;/p&gt;&#xA;&lt;p&gt;在&lt;code&gt;cartpole_env.py&lt;/code&gt;的代码中有如下实现：&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_get_observations&lt;/span&gt;(self) &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Dict[str, torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Tensor &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Dict[str, torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Tensor]]:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;obs &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;cat(&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;(&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;&#x9;self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;joint_pos[:, self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;_pole_dof_idx[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;unsqueeze(dim&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;),&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;&#x9;self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;joint_vel[:, self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;_pole_dof_idx[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;unsqueeze(dim&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;),&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;&#x9;self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;joint_pos[:, self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;_cart_dof_idx[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;unsqueeze(dim&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;),&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;&#x9;self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;joint_vel[:, self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;_cart_dof_idx[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;unsqueeze(dim&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;),&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;),&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;dim&lt;span style=&#34;color:#f92672&#34;&gt;=-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;observations &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;policy&amp;#34;&lt;/span&gt;: obs}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; observations&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;上述代码中的&lt;code&gt;_pole_dof_idx&lt;/code&gt;里边存放的是杆子的&lt;code&gt;joint&lt;/code&gt;对应的索引数据，&lt;code&gt;_cart_dof_idx&lt;/code&gt;存放的是小车的&lt;code&gt;joint&lt;/code&gt;对应的索引数据，这里介绍下获取杆子位置的代码，获取杆子速度和小车位置和速度的代码都一样。&lt;/p&gt;</description>
+      <description>&lt;p&gt;原文地址：&lt;a href=&#34;https://isaac-sim.github.io/IsaacLab/source/tutorials/03_envs/create_direct_rl_env.html&#34;&gt;https://isaac-sim.github.io/IsaacLab/source/tutorials/03_envs/create_direct_rl_env.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;从环境中获取信息观察&#34;&gt;从环境中获取信息（观察）&lt;/h2&gt;
+&lt;h3 id=&#34;获取joint铰链信息位置和速度&#34;&gt;获取joint（铰链）信息：位置和速度&lt;/h3&gt;
+&lt;p&gt;joint会被包含在Articulation（关节）中，一个Articulation可能会包含1个或多个的joint对象，可以通过&lt;code&gt;Articulation.find_joints()&lt;/code&gt;方法获得joint在当前Articulation中的索引（index）数据。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;find_joints&lt;/code&gt;的返回值是这样的：&lt;code&gt;tuple[list[joint索引], list[joint名字]]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;find_joints的函数声明如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;find_joints&lt;/span&gt;( self, name_keys: str &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; Sequence[str], joint_subset: list[str] &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;None&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;None&lt;/span&gt;, preserve_order: bool &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt; ) &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; tuple[list[int], list[str]]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在Articulation内部有一个属性私有变量&lt;code&gt;_data: ArticulationData&lt;/code&gt;，该变量通过方法&lt;code&gt;def data(self) -&amp;gt; ArticulationData&lt;/code&gt;获取，在&lt;code&gt;ArticulationData&lt;/code&gt;中存放着几个关节重要的数据：位置&lt;code&gt;ArticulationData._joint_pos&lt;/code&gt;，速度&lt;code&gt;ArticulationData._joint_vel&lt;/code&gt;，加速度&lt;code&gt;ArticulationData._joint_acc&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在&lt;code&gt;ArticulationData&lt;/code&gt;有几个&lt;code&gt;@property&lt;/code&gt;装饰器函数，用于获取上述的三个属性，这样可以用过属性名的方式直接访问到这些数据。&lt;/p&gt;
+&lt;p&gt;下面介绍下这三个方法的返回值：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;joint_pos&lt;/code&gt;返回&lt;code&gt;torch.Size([num_instances, num_joints])&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;joint_vel&lt;/code&gt;返回&lt;code&gt;torch.Size([num_instances, num_joints])&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;joint_acc&lt;/code&gt;返回&lt;code&gt;torch.Size([num_instances, num_joints])&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;是时候讲解下&lt;code&gt;DirectRLEnv(gym.Env)._get_observations(self) -&amp;gt; VecEnvObs&lt;/code&gt;方法了，该方法带有&lt;code&gt;@abstractmethod&lt;/code&gt;被定义成抽象方法，所以我们在继承&lt;code&gt;DirectRLEnv&lt;/code&gt;类后必须在自己的类中实现&lt;code&gt;_get_observations&lt;/code&gt;方法。&lt;/p&gt;
+&lt;p&gt;我们在&lt;code&gt;_get_observations&lt;/code&gt;方法中计算并返回观测值，这会用到上面提到的&lt;code&gt;ArticulationData&lt;/code&gt;以及如何通过&lt;code&gt;joint&lt;/code&gt;索引从中获取实际数据。&lt;/p&gt;
+&lt;p&gt;在&lt;code&gt;cartpole_env.py&lt;/code&gt;的代码中有如下实现：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_get_observations&lt;/span&gt;(self) &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Dict[str, torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Tensor &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Dict[str, torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Tensor]]:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	obs &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;cat(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;joint_pos[:, self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;_pole_dof_idx[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;unsqueeze(dim&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;joint_vel[:, self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;_pole_dof_idx[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;unsqueeze(dim&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;joint_pos[:, self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;_cart_dof_idx[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;unsqueeze(dim&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;joint_vel[:, self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;_cart_dof_idx[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;unsqueeze(dim&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		dim&lt;span style=&#34;color:#f92672&#34;&gt;=-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	observations &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;policy&amp;#34;&lt;/span&gt;: obs}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; observations
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;上述代码中的&lt;code&gt;_pole_dof_idx&lt;/code&gt;里边存放的是杆子的&lt;code&gt;joint&lt;/code&gt;对应的索引数据，&lt;code&gt;_cart_dof_idx&lt;/code&gt;存放的是小车的&lt;code&gt;joint&lt;/code&gt;对应的索引数据，这里介绍下获取杆子位置的代码，获取杆子速度和小车位置和速度的代码都一样。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Park变换</title>
       <link>https://fake-rick.github.io/posts/park%E5%8F%98%E6%8D%A2/</link>
       <pubDate>Thu, 18 Jul 2024 10:55:56 +0800</pubDate>
       <guid>https://fake-rick.github.io/posts/park%E5%8F%98%E6%8D%A2/</guid>
-      <description>&lt;h2 id=&#34;park变换&#34;&gt;Park变换&lt;/h2&gt;&#xA;&lt;p&gt;Park变换的目的是将Clark变换后的αβ坐标系转换成d,q旋转坐标系。d轴方向与转子磁链方向重合，所以d轴也叫直轴。q轴方向与转子磁链方向垂直，所以q轴又叫交轴。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;./imgs/a.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;旋转矩阵是什么&#34;&gt;旋转矩阵是什么？&lt;/h2&gt;&#xA;&lt;h3 id=&#34;abo&#34;&gt;⊿abo：&lt;/h3&gt;&#xA;&lt;p&gt;$ob = oa\times \cos(\theta)$&lt;/p&gt;&#xA;&lt;p&gt;已知：&lt;strong&gt;bc = ad&lt;/strong&gt;&lt;/p&gt;&#xA;$$&#xA;\because \angle pad + \angle pab = 90°\\ \angle oab + \angle pab = 90°\\ \therefore \angle oab = \angle pad\\ \angle aob = \angle apd = \angle \theta &#xA;$$&lt;h3 id=&#34;adp&#34;&gt;⊿adp：&lt;/h3&gt;&#xA;&lt;p&gt;$ad = ap \times \sin(\theta)$&lt;/p&gt;&#xA;$$&#xA;\because oc = ob + bc \\ \therefore oc = oa \times \cos(\theta) + ap \times \sin(\theta) &#xA;$$&lt;p&gt;所以向量p到d轴的投影为：$oa \times \cos(\theta) + ap \times \sin(\theta)$&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;park变换&#34;&gt;Park变换&lt;/h2&gt;
+&lt;p&gt;Park变换的目的是将Clark变换后的αβ坐标系转换成d,q旋转坐标系。d轴方向与转子磁链方向重合，所以d轴也叫直轴。q轴方向与转子磁链方向垂直，所以q轴又叫交轴。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;./imgs/a.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;旋转矩阵是什么&#34;&gt;旋转矩阵是什么？&lt;/h2&gt;
+&lt;h3 id=&#34;abo&#34;&gt;⊿abo：&lt;/h3&gt;
+&lt;p&gt;$ob = oa\times \cos(\theta)$&lt;/p&gt;
+&lt;p&gt;已知：&lt;strong&gt;bc = ad&lt;/strong&gt;&lt;/p&gt;
+$$
+\because \angle pad + \angle pab = 90°\\ \angle oab + \angle pab = 90°\\ \therefore \angle oab = \angle pad\\ \angle aob = \angle apd = \angle \theta 
+$$&lt;h3 id=&#34;adp&#34;&gt;⊿adp：&lt;/h3&gt;
+&lt;p&gt;$ad = ap \times \sin(\theta)$&lt;/p&gt;
+$$
+\because oc = ob + bc \\ \therefore oc = oa \times \cos(\theta) + ap \times \sin(\theta) 
+$$&lt;p&gt;所以向量p到d轴的投影为：$oa \times \cos(\theta) + ap \times \sin(\theta)$&lt;/p&gt;</description>
     </item>
     <item>
       <title>Clark变换矩阵</title>
       <link>https://fake-rick.github.io/posts/clark%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5/</link>
       <pubDate>Thu, 18 Jul 2024 10:09:12 +0800</pubDate>
       <guid>https://fake-rick.github.io/posts/clark%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;./imgs/a.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;什么是clark变换&#34;&gt;什么是Clark变换？&lt;/h2&gt;&#xA;&lt;p&gt;Clark变换将三相系统（在 abc 坐标系中）的时域分量转换为正交静止坐标系 (αβ) 中的两个分量。&lt;/p&gt;&#xA;&lt;h2 id=&#34;利用基变换来实现三相坐标系abc到两相正交坐标系αβ&#34;&gt;利用基变换来实现三相坐标系(abc)到两相正交坐标系(αβ)&lt;/h2&gt;&#xA;&lt;p&gt;已知三相坐标系的相位依次相差120°且αβ为正交坐标系。&#xA;将α轴与a轴重叠，将向量a沿着原点O的方向延长做一条辅助线，∠boe和∠coe等于60°。&lt;/p&gt;&#xA;&lt;h2 id=&#34;计算向量b和向量c到α轴的投影长度&#34;&gt;计算向量b和向量c到α轴的投影长度：&lt;/h2&gt;&#xA;$$&#xA;be = \sin(∠boe) = \sin(60°) = \frac{\sqrt{3}}{2}  \\ ce = -\sin(∠coe) = -\sin(60°) = -\frac{\sqrt{3}}{2}  &#xA;$$&lt;p&gt;因为向量c在α轴的下方所以投影为负&lt;/p&gt;&#xA;&lt;h2 id=&#34;计算向量b和向量c到β轴的投影长度&#34;&gt;计算向量b和向量c到β轴的投影长度：&lt;/h2&gt;&#xA;$$&#xA;bg = -\cos(∠boe) = -\cos(60°) = -\frac{1}{2}  \\   &#xA;ch = -\cos(∠coe) = -\cos(60°) = -\frac{1}{2}  &#xA;$$&lt;p&gt;因为向量b和向量c在β轴的左侧所以投影为负&lt;/p&gt;&#xA;&lt;h2 id=&#34;组合出基变换矩阵&#34;&gt;组合出基变换矩阵&lt;/h2&gt;&#xA;&lt;p&gt;根据上面的投影可以得到a,b,c三个向量的坐标：向量 $a=[1, 0]$，向量$b=[-\frac{1}{2},\frac{\sqrt{3}}{2}] $，向量 $c=[-\frac{1}{2},-\frac{\sqrt{3}}{2}] $&lt;/p&gt;&#xA;&lt;p&gt;所以基变换矩阵为：&lt;/p&gt;&#xA;$$&#xA;A =  \left[ \begin{matrix} 1 &amp; -\frac{1}{2} &amp; -\frac{1}{2} \\ 0 &amp; \frac{\sqrt{3}}{2}&amp; -\frac{\sqrt{3}}{2} \end{matrix} \right] &#xA;$$&lt;p&gt;坐标转换公式为：&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;./imgs/a.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;什么是clark变换&#34;&gt;什么是Clark变换？&lt;/h2&gt;
+&lt;p&gt;Clark变换将三相系统（在 abc 坐标系中）的时域分量转换为正交静止坐标系 (αβ) 中的两个分量。&lt;/p&gt;
+&lt;h2 id=&#34;利用基变换来实现三相坐标系abc到两相正交坐标系αβ&#34;&gt;利用基变换来实现三相坐标系(abc)到两相正交坐标系(αβ)&lt;/h2&gt;
+&lt;p&gt;已知三相坐标系的相位依次相差120°且αβ为正交坐标系。
+将α轴与a轴重叠，将向量a沿着原点O的方向延长做一条辅助线，∠boe和∠coe等于60°。&lt;/p&gt;
+&lt;h2 id=&#34;计算向量b和向量c到α轴的投影长度&#34;&gt;计算向量b和向量c到α轴的投影长度：&lt;/h2&gt;
+$$
+be = \sin(∠boe) = \sin(60°) = \frac{\sqrt{3}}{2}  \\ ce = -\sin(∠coe) = -\sin(60°) = -\frac{\sqrt{3}}{2}  
+$$&lt;p&gt;因为向量c在α轴的下方所以投影为负&lt;/p&gt;
+&lt;h2 id=&#34;计算向量b和向量c到β轴的投影长度&#34;&gt;计算向量b和向量c到β轴的投影长度：&lt;/h2&gt;
+$$
+bg = -\cos(∠boe) = -\cos(60°) = -\frac{1}{2}  \\   
+ch = -\cos(∠coe) = -\cos(60°) = -\frac{1}{2}  
+$$&lt;p&gt;因为向量b和向量c在β轴的左侧所以投影为负&lt;/p&gt;
+&lt;h2 id=&#34;组合出基变换矩阵&#34;&gt;组合出基变换矩阵&lt;/h2&gt;
+&lt;p&gt;根据上面的投影可以得到a,b,c三个向量的坐标：向量 $a=[1, 0]$，向量$b=[-\frac{1}{2},\frac{\sqrt{3}}{2}] $，向量 $c=[-\frac{1}{2},-\frac{\sqrt{3}}{2}] $&lt;/p&gt;
+&lt;p&gt;所以基变换矩阵为：&lt;/p&gt;
+$$
+A =  \left[ \begin{matrix} 1 &amp; -\frac{1}{2} &amp; -\frac{1}{2} \\ 0 &amp; \frac{\sqrt{3}}{2}&amp; -\frac{\sqrt{3}}{2} \end{matrix} \right] 
+$$&lt;p&gt;坐标转换公式为：&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
