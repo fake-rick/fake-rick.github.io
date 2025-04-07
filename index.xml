@@ -11,8 +11,64 @@
     </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 27 Jan 2025 03:27:30 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 07 Apr 2025 19:59:36 +0800</lastBuildDate>
     <atom:link href="https://fake-rick.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>STM32H7使用串口DMA避坑指南</title>
+      <link>https://fake-rick.github.io/posts/stm32h7%E4%BD%BF%E7%94%A8%E4%B8%B2%E5%8F%A3dma%E9%81%BF%E5%9D%91%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Mon, 07 Apr 2025 19:59:36 +0800</pubDate>
+      <guid>https://fake-rick.github.io/posts/stm32h7%E4%BD%BF%E7%94%A8%E4%B8%B2%E5%8F%A3dma%E9%81%BF%E5%9D%91%E6%8C%87%E5%8D%97/</guid>
+      <description>&lt;h2 id=&#34;缓冲区设定&#34;&gt;缓冲区设定&lt;/h2&gt;
+&lt;p&gt;使用RAM_D2作为读写缓冲区配置&lt;/p&gt;
+&lt;p&gt;STM32H7 _ _ _ _ _ x_FLASH.ld配置&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;.dma_buffer : /* 冒号前有一个空格 */
+{
+  *(.dma_buffer)
+} &amp;gt;RAM_D2
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后在需要进行读写缓冲区的文件中添加以下定义：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/// 这里通过宏定义来定义DMA_BUFFER
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/// __ICCARM__：表示 IAR EWARM 编译器
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/// 所以如果是GCC的话就使用else块中的定义了
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#if defined( __ICCARM__ )
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;#define DMA_BUFFER \
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;      _Pragma(&amp;#34;location=\&amp;#34;.dma_buffer\&amp;#34;&amp;#34;)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#else
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;#define DMA_BUFFER \
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;      __attribute__((section(&amp;#34;.dma_buffer&amp;#34;)))
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#endif
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define BUFFER_SIZE 256
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;DMA_BUFFER &lt;span style=&#34;color:#66d9ef&#34;&gt;uint8_t&lt;/span&gt; tx_buffer[BUFFER_SIZE];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;uint8_t&lt;/span&gt; tx_idx &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;DMA_BUFFER &lt;span style=&#34;color:#66d9ef&#34;&gt;uint8_t&lt;/span&gt; rx_buffer[BUFFER_SIZE];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;串口异常处理函数&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;如果不对串口异常进行处理，清理相关错误标记，可能无法继续执行中断函数&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/// 错误码是定义如下
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define  HAL_UART_ERROR_NONE             (0x00000000U)    &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/*!&amp;lt; No error                */&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define  HAL_UART_ERROR_PE               (0x00000001U)    &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/*!&amp;lt; Parity error            */&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define  HAL_UART_ERROR_NE               (0x00000002U)    &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/*!&amp;lt; Noise error             */&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define  HAL_UART_ERROR_FE               (0x00000004U)    &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/*!&amp;lt; Frame error             */&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define  HAL_UART_ERROR_ORE              (0x00000008U)    &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/*!&amp;lt; Overrun error           */&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define  HAL_UART_ERROR_DMA              (0x00000010U)    &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/*!&amp;lt; DMA transfer error      */&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define  HAL_UART_ERROR_RTO              (0x00000020U)    &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/*!&amp;lt; Receiver Timeout error  */&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/// 下面错误处理函数中把奇偶校验错误以及数据溢出错误标志清除
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/// 可以直接在调试时打断点查看huart-&amp;gt;ErrorCode的值
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;HAL_UART_ErrorCallback&lt;/span&gt;(UART_HandleTypeDef&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; huart) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (huart&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;Instance &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; USART6) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;__HAL_UART_CLEAR_OREFLAG&lt;/span&gt;(huart);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;__HAL_UART_CLEAR_PEFLAG&lt;/span&gt;(huart);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    huart&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;RxState &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; HAL_UART_STATE_READY;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;HAL_UARTEx_ReceiveToIdle_DMA&lt;/span&gt;(huart, rx_buffer, BUFFER_SIZE);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     &lt;span style=&#34;color:#a6e22e&#34;&gt;__HAL_DMA_DISABLE_IT&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;hdma_usart6_rx, DMA_IT_HT);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;关闭半中断&#34;&gt;关闭半中断&lt;/h2&gt;
+&lt;p&gt;在调用&lt;code&gt;HAL_UARTEx_ReceiveToIdle_DMA&lt;/code&gt;函数时默认打开“半中断”，数据在接收到一半（左右）时会触发&lt;code&gt;HAL_UARTEx_RxEventCallback&lt;/code&gt;回掉函数， 如果仅需要处理完整数据的可以在调用&lt;code&gt;HAL_UARTEx_ReceiveToIdle_DMA&lt;/code&gt;函数后直接执行&lt;code&gt;__HAL_DMA_DISABLE_IT(&amp;amp;hdma_usart6_rx, DMA_IT_HT);&lt;/code&gt;，即可关闭半中断&lt;/p&gt;</description>
+    </item>
     <item>
       <title>行星减速器设计</title>
       <link>https://fake-rick.github.io/posts/%E8%A1%8C%E6%98%9F%E5%87%8F%E9%80%9F%E5%99%A8%E8%AE%BE%E8%AE%A1/</link>
