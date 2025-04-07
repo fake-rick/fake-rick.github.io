@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Motor on Fake瑞克的技术博客</title>
     <link>https://fake-rick.github.io/tags/motor/</link>
     <description>Recent content in Motor on Fake瑞克的技术博客</description>
-    <image>
-      <title>Fake瑞克的技术博客</title>
-      <url>https://avatars.githubusercontent.com/u/44377946</url>
-      <link>https://avatars.githubusercontent.com/u/44377946</link>
-    </image>
-    <generator>Hugo -- 0.142.0</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 27 Jan 2025 03:27:30 +0800</lastBuildDate>
     <atom:link href="https://fake-rick.github.io/tags/motor/index.xml" rel="self" type="application/rss+xml" />
@@ -18,75 +13,7 @@
       <link>https://fake-rick.github.io/posts/%E8%A1%8C%E6%98%9F%E5%87%8F%E9%80%9F%E5%99%A8%E8%AE%BE%E8%AE%A1/</link>
       <pubDate>Mon, 27 Jan 2025 03:27:30 +0800</pubDate>
       <guid>https://fake-rick.github.io/posts/%E8%A1%8C%E6%98%9F%E5%87%8F%E9%80%9F%E5%99%A8%E8%AE%BE%E8%AE%A1/</guid>
-      <description>&lt;p&gt;现代机器人的一个核心部件就是就是关节电机，在关节电机中会用到减速器，行星减速器就是最常见的一种。&lt;/p&gt;
-&lt;p&gt;本文针对行星减速器的一种情况进行讲解：行星架固定，太阳轮作为输入，行星架作为输出。&lt;/p&gt;
-&lt;h2 id=&#34;基础概念&#34;&gt;基础概念&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;名称&lt;/th&gt;
-          &lt;th&gt;描述&lt;/th&gt;
-          &lt;th&gt;符号&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;齿数（Number of teeth）&lt;/td&gt;
-          &lt;td&gt;齿轮齿的数量&lt;/td&gt;
-          &lt;td&gt;Z&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;模数（Module）&lt;/td&gt;
-          &lt;td&gt;决定齿大小的因数&lt;/td&gt;
-          &lt;td&gt;M&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;直径&lt;/td&gt;
-          &lt;td&gt;齿轮分度圆直径&lt;/td&gt;
-          &lt;td&gt;D&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;上述关系可以表示为：\( D = M \times Z \)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;这个公式在设计行星减速器时非常重要请牢记&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;要是两个齿轮啮合，它们必须拥有相同的模数（Module）：&lt;/p&gt;
-$$
-M_1 = M_2 \\
-\therefore \frac{D_1}{Z_1} = \frac{D_2}{Z_2} \\
-\therefore \frac{Z_2}{Z_1} = \frac{D_2}{D_1} = \frac{2R_2}{2R_1} = \frac{R_2}{R_1}
-$$&lt;h2 id=&#34;行星减速器组件&#34;&gt;行星减速器组件&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;名称&lt;/th&gt;
-          &lt;th&gt;符号&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;太阳轮（Sun）&lt;/td&gt;
-          &lt;td&gt;S&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;行星轮（Planet）&lt;/td&gt;
-          &lt;td&gt;P&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;齿圈（Ring）&lt;/td&gt;
-          &lt;td&gt;R&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;行星架（Carrier）&lt;/td&gt;
-          &lt;td&gt;C&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;半径关系&#34;&gt;半径关系&lt;/h2&gt;
-$$
-r_R = r_S + 2 r_P \\
-2 r_P = r_R - r_S
-$$&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;./imgs/1.png&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;现代机器人的一个核心部件就是就是关节电机，在关节电机中会用到减速器，行星减速器就是最常见的一种。&lt;/p&gt;&#xA;&lt;p&gt;本文针对行星减速器的一种情况进行讲解：行星架固定，太阳轮作为输入，行星架作为输出。&lt;/p&gt;&#xA;&lt;h2 id=&#34;基础概念&#34;&gt;基础概念&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;名称&lt;/th&gt;&#xA;          &lt;th&gt;描述&lt;/th&gt;&#xA;          &lt;th&gt;符号&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;齿数（Number of teeth）&lt;/td&gt;&#xA;          &lt;td&gt;齿轮齿的数量&lt;/td&gt;&#xA;          &lt;td&gt;Z&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;模数（Module）&lt;/td&gt;&#xA;          &lt;td&gt;决定齿大小的因数&lt;/td&gt;&#xA;          &lt;td&gt;M&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;直径&lt;/td&gt;&#xA;          &lt;td&gt;齿轮分度圆直径&lt;/td&gt;&#xA;          &lt;td&gt;D&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;上述关系可以表示为：\( D = M \times Z \)&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;这个公式在设计行星减速器时非常重要请牢记&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;要是两个齿轮啮合，它们必须拥有相同的模数（Module）：&lt;/p&gt;&#xA;$$&#xA;M_1 = M_2 \\&#xA;\therefore \frac{D_1}{Z_1} = \frac{D_2}{Z_2} \\&#xA;\therefore \frac{Z_2}{Z_1} = \frac{D_2}{D_1} = \frac{2R_2}{2R_1} = \frac{R_2}{R_1}&#xA;$$&lt;h2 id=&#34;行星减速器组件&#34;&gt;行星减速器组件&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;名称&lt;/th&gt;&#xA;          &lt;th&gt;符号&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;太阳轮（Sun）&lt;/td&gt;&#xA;          &lt;td&gt;S&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;行星轮（Planet）&lt;/td&gt;&#xA;          &lt;td&gt;P&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;齿圈（Ring）&lt;/td&gt;&#xA;          &lt;td&gt;R&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;行星架（Carrier）&lt;/td&gt;&#xA;          &lt;td&gt;C&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;半径关系&#34;&gt;半径关系&lt;/h2&gt;&#xA;$$&#xA;r_R = r_S + 2 r_P \\&#xA;2 r_P = r_R - r_S&#xA;$$&lt;p&gt;&lt;img src=&#34;./imgs/1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

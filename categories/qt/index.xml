@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Qt on Fake瑞克的技术博客</title>
     <link>https://fake-rick.github.io/categories/qt/</link>
     <description>Recent content in Qt on Fake瑞克的技术博客</description>
-    <image>
-      <title>Fake瑞克的技术博客</title>
-      <url>https://avatars.githubusercontent.com/u/44377946</url>
-      <link>https://avatars.githubusercontent.com/u/44377946</link>
-    </image>
-    <generator>Hugo -- 0.142.0</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 25 Jan 2025 19:15:07 +0800</lastBuildDate>
     <atom:link href="https://fake-rick.github.io/categories/qt/index.xml" rel="self" type="application/rss+xml" />
@@ -18,91 +13,7 @@
       <link>https://fake-rick.github.io/posts/windows%E7%B3%BB%E7%BB%9Fvtk-v9.1.0%E4%BD%BF%E7%94%A8qt5.15.2%E8%87%AA%E5%B8%A6mingw810_64%E8%BF%9B%E8%A1%8C%E7%BC%96%E8%AF%91/</link>
       <pubDate>Sat, 25 Jan 2025 19:15:07 +0800</pubDate>
       <guid>https://fake-rick.github.io/posts/windows%E7%B3%BB%E7%BB%9Fvtk-v9.1.0%E4%BD%BF%E7%94%A8qt5.15.2%E8%87%AA%E5%B8%A6mingw810_64%E8%BF%9B%E8%A1%8C%E7%BC%96%E8%AF%91/</guid>
-      <description>&lt;p&gt;在windows中使用mingw编译vtk存在不少问题, 测试了几个高于vtk-v9.1.0的版本都存在一些问题导致无法正常编译, 本文记录下编译过程&lt;/p&gt;
-&lt;h2 id=&#34;相关资源下载地址&#34;&gt;相关资源下载地址&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/Kitware/CMake/releases/download/v3.31.4/cmake-3.31.4-windows-x86_64.msi&#34;&gt;cmake-3.31.4-windows-x86_64.msi&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://gitlab.kitware.com/vtk/vtk/-/archive/v9.1.0/vtk-v9.1.0.zip&#34;&gt;vtk-v9.1.0&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;vtk编译--安装&#34;&gt;VTK编译 &amp;amp; 安装&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;前置操作: 将Qt5.15.2中的mingw810_64的bin目录添加到系统环境变量中,并重启操作系统, 如: &lt;code&gt;C:\Qt\Tools\mingw810_64\bin&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;./imgs/path.png&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;打开&lt;code&gt;C:\Qt\Tools\mingw810_64\x86_64-w64-mingw32\include\winerror.h&lt;/code&gt;文件搜索&lt;code&gt;ERROR_INCORRECT_SIZE __MSABI_LONG&lt;/code&gt;, 查看该定义下面是否有以下定义, 没有的话加上:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define ERROR_SYMLINK_CLASS_DISABLED                       1463
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define ERROR_SYMLINK_NOT_SUPPORTED                        1464
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define ERROR_XML_PARSE_ERROR                              1465
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define ERROR_XMLDSIG_ERROR                                1466
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define ERROR_RESTART_APPLICATION                          1467
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define ERROR_WRONG_COMPARTMENT                            1468
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define ERROR_AUTHIP_FAILURE                               1469
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define ERROR_NO_NVRAM_RESOURCES                           1470
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;下载并安装cmake&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;下载并解压vtk-v9.1.0&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;进入vtk-v9.1.0目录下创建build文件夹&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;打开cmake-gui对vtk-v9.1.0进行配置&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;设置源码和编译路径&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;./imgs/1.png&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
-&lt;p&gt;点击Configure按钮, 选择&lt;code&gt;MinGW Makefiles&lt;/code&gt;, 然后点击Finish&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;./imgs/2.png&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
-&lt;p&gt;需要等待CMake进行一些配置, 然后会出现一些新的选项, 下面是一些我们要配置的选项, 先选中界面上的Advanced复选框:&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Name&lt;/th&gt;
-          &lt;th&gt;Value&lt;/th&gt;
-          &lt;th&gt;描述&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;CMAKE_CXX_FLAGS&lt;/td&gt;
-          &lt;td&gt;-fcommon&lt;/td&gt;
-          &lt;td&gt;-&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;CMAKE_C_FLAGS&lt;/td&gt;
-          &lt;td&gt;-fcommon&lt;/td&gt;
-          &lt;td&gt;-&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;CMAKE_BUILD_TYPE&lt;/td&gt;
-          &lt;td&gt;Release&lt;/td&gt;
-          &lt;td&gt;以Release的模式进行编译&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;CMAKE_INSTALL_PREFIX&lt;/td&gt;
-          &lt;td&gt;C:\Library\VTK&lt;/td&gt;
-          &lt;td&gt;执行make install时的安装路径&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;VTK_GROUP_ENABLE_Qt&lt;/td&gt;
-          &lt;td&gt;YES&lt;/td&gt;
-          &lt;td&gt;使能Qt选项&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;./imgs/3.png&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;在windows中使用mingw编译vtk存在不少问题, 测试了几个高于vtk-v9.1.0的版本都存在一些问题导致无法正常编译, 本文记录下编译过程&lt;/p&gt;&#xA;&lt;h2 id=&#34;相关资源下载地址&#34;&gt;相关资源下载地址&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/Kitware/CMake/releases/download/v3.31.4/cmake-3.31.4-windows-x86_64.msi&#34;&gt;cmake-3.31.4-windows-x86_64.msi&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://gitlab.kitware.com/vtk/vtk/-/archive/v9.1.0/vtk-v9.1.0.zip&#34;&gt;vtk-v9.1.0&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;vtk编译--安装&#34;&gt;VTK编译 &amp;amp; 安装&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;前置操作: 将Qt5.15.2中的mingw810_64的bin目录添加到系统环境变量中,并重启操作系统, 如: &lt;code&gt;C:\Qt\Tools\mingw810_64\bin&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;./imgs/path.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;打开&lt;code&gt;C:\Qt\Tools\mingw810_64\x86_64-w64-mingw32\include\winerror.h&lt;/code&gt;文件搜索&lt;code&gt;ERROR_INCORRECT_SIZE __MSABI_LONG&lt;/code&gt;, 查看该定义下面是否有以下定义, 没有的话加上:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define ERROR_SYMLINK_CLASS_DISABLED                       1463&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define ERROR_SYMLINK_NOT_SUPPORTED                        1464&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define ERROR_XML_PARSE_ERROR                              1465&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define ERROR_XMLDSIG_ERROR                                1466&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define ERROR_RESTART_APPLICATION                          1467&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define ERROR_WRONG_COMPARTMENT                            1468&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define ERROR_AUTHIP_FAILURE                               1469&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define ERROR_NO_NVRAM_RESOURCES                           1470&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&lt;/blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;下载并安装cmake&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;下载并解压vtk-v9.1.0&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;进入vtk-v9.1.0目录下创建build文件夹&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;打开cmake-gui对vtk-v9.1.0进行配置&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;设置源码和编译路径&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;./imgs/1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;点击Configure按钮, 选择&lt;code&gt;MinGW Makefiles&lt;/code&gt;, 然后点击Finish&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;./imgs/2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;需要等待CMake进行一些配置, 然后会出现一些新的选项, 下面是一些我们要配置的选项, 先选中界面上的Advanced复选框:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Name&lt;/th&gt;&#xA;          &lt;th&gt;Value&lt;/th&gt;&#xA;          &lt;th&gt;描述&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;CMAKE_CXX_FLAGS&lt;/td&gt;&#xA;          &lt;td&gt;-fcommon&lt;/td&gt;&#xA;          &lt;td&gt;-&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;CMAKE_C_FLAGS&lt;/td&gt;&#xA;          &lt;td&gt;-fcommon&lt;/td&gt;&#xA;          &lt;td&gt;-&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;CMAKE_BUILD_TYPE&lt;/td&gt;&#xA;          &lt;td&gt;Release&lt;/td&gt;&#xA;          &lt;td&gt;以Release的模式进行编译&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;CMAKE_INSTALL_PREFIX&lt;/td&gt;&#xA;          &lt;td&gt;C:\Library\VTK&lt;/td&gt;&#xA;          &lt;td&gt;执行make install时的安装路径&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;VTK_GROUP_ENABLE_Qt&lt;/td&gt;&#xA;          &lt;td&gt;YES&lt;/td&gt;&#xA;          &lt;td&gt;使能Qt选项&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;&lt;img src=&#34;./imgs/3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

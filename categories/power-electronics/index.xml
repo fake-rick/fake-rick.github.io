@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Power Electronics on Fake瑞克的技术博客</title>
     <link>https://fake-rick.github.io/categories/power-electronics/</link>
     <description>Recent content in Power Electronics on Fake瑞克的技术博客</description>
-    <image>
-      <title>Fake瑞克的技术博客</title>
-      <url>https://avatars.githubusercontent.com/u/44377946</url>
-      <link>https://avatars.githubusercontent.com/u/44377946</link>
-    </image>
-    <generator>Hugo -- 0.142.0</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 18 Jul 2024 10:55:56 +0800</lastBuildDate>
     <atom:link href="https://fake-rick.github.io/categories/power-electronics/index.xml" rel="self" type="application/rss+xml" />
@@ -18,49 +13,14 @@
       <link>https://fake-rick.github.io/posts/park%E5%8F%98%E6%8D%A2/</link>
       <pubDate>Thu, 18 Jul 2024 10:55:56 +0800</pubDate>
       <guid>https://fake-rick.github.io/posts/park%E5%8F%98%E6%8D%A2/</guid>
-      <description>&lt;h2 id=&#34;park变换&#34;&gt;Park变换&lt;/h2&gt;
-&lt;p&gt;Park变换的目的是将Clark变换后的αβ坐标系转换成d,q旋转坐标系。d轴方向与转子磁链方向重合，所以d轴也叫直轴。q轴方向与转子磁链方向垂直，所以q轴又叫交轴。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;./imgs/a.png&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;旋转矩阵是什么&#34;&gt;旋转矩阵是什么？&lt;/h2&gt;
-&lt;h3 id=&#34;abo&#34;&gt;⊿abo：&lt;/h3&gt;
-&lt;p&gt;$ob = oa\times \cos(\theta)$&lt;/p&gt;
-&lt;p&gt;已知：&lt;strong&gt;bc = ad&lt;/strong&gt;&lt;/p&gt;
-$$
-\because \angle pad + \angle pab = 90°\\ \angle oab + \angle pab = 90°\\ \therefore \angle oab = \angle pad\\ \angle aob = \angle apd = \angle \theta 
-$$&lt;h3 id=&#34;adp&#34;&gt;⊿adp：&lt;/h3&gt;
-&lt;p&gt;$ad = ap \times \sin(\theta)$&lt;/p&gt;
-$$
-\because oc = ob + bc \\ \therefore oc = oa \times \cos(\theta) + ap \times \sin(\theta) 
-$$&lt;p&gt;所以向量p到d轴的投影为：$oa \times \cos(\theta) + ap \times \sin(\theta)$&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;park变换&#34;&gt;Park变换&lt;/h2&gt;&#xA;&lt;p&gt;Park变换的目的是将Clark变换后的αβ坐标系转换成d,q旋转坐标系。d轴方向与转子磁链方向重合，所以d轴也叫直轴。q轴方向与转子磁链方向垂直，所以q轴又叫交轴。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;./imgs/a.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;旋转矩阵是什么&#34;&gt;旋转矩阵是什么？&lt;/h2&gt;&#xA;&lt;h3 id=&#34;abo&#34;&gt;⊿abo：&lt;/h3&gt;&#xA;&lt;p&gt;$ob = oa\times \cos(\theta)$&lt;/p&gt;&#xA;&lt;p&gt;已知：&lt;strong&gt;bc = ad&lt;/strong&gt;&lt;/p&gt;&#xA;$$&#xA;\because \angle pad + \angle pab = 90°\\ \angle oab + \angle pab = 90°\\ \therefore \angle oab = \angle pad\\ \angle aob = \angle apd = \angle \theta &#xA;$$&lt;h3 id=&#34;adp&#34;&gt;⊿adp：&lt;/h3&gt;&#xA;&lt;p&gt;$ad = ap \times \sin(\theta)$&lt;/p&gt;&#xA;$$&#xA;\because oc = ob + bc \\ \therefore oc = oa \times \cos(\theta) + ap \times \sin(\theta) &#xA;$$&lt;p&gt;所以向量p到d轴的投影为：$oa \times \cos(\theta) + ap \times \sin(\theta)$&lt;/p&gt;</description>
     </item>
     <item>
       <title>Clark变换矩阵</title>
       <link>https://fake-rick.github.io/posts/clark%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5/</link>
       <pubDate>Thu, 18 Jul 2024 10:09:12 +0800</pubDate>
       <guid>https://fake-rick.github.io/posts/clark%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;./imgs/a.png&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;什么是clark变换&#34;&gt;什么是Clark变换？&lt;/h2&gt;
-&lt;p&gt;Clark变换将三相系统（在 abc 坐标系中）的时域分量转换为正交静止坐标系 (αβ) 中的两个分量。&lt;/p&gt;
-&lt;h2 id=&#34;利用基变换来实现三相坐标系abc到两相正交坐标系αβ&#34;&gt;利用基变换来实现三相坐标系(abc)到两相正交坐标系(αβ)&lt;/h2&gt;
-&lt;p&gt;已知三相坐标系的相位依次相差120°且αβ为正交坐标系。
-将α轴与a轴重叠，将向量a沿着原点O的方向延长做一条辅助线，∠boe和∠coe等于60°。&lt;/p&gt;
-&lt;h2 id=&#34;计算向量b和向量c到α轴的投影长度&#34;&gt;计算向量b和向量c到α轴的投影长度：&lt;/h2&gt;
-$$
-be = \sin(∠boe) = \sin(60°) = \frac{\sqrt{3}}{2}  \\ ce = -\sin(∠coe) = -\sin(60°) = -\frac{\sqrt{3}}{2}  
-$$&lt;p&gt;因为向量c在α轴的下方所以投影为负&lt;/p&gt;
-&lt;h2 id=&#34;计算向量b和向量c到β轴的投影长度&#34;&gt;计算向量b和向量c到β轴的投影长度：&lt;/h2&gt;
-$$
-bg = -\cos(∠boe) = -\cos(60°) = -\frac{1}{2}  \\   
-ch = -\cos(∠coe) = -\cos(60°) = -\frac{1}{2}  
-$$&lt;p&gt;因为向量b和向量c在β轴的左侧所以投影为负&lt;/p&gt;
-&lt;h2 id=&#34;组合出基变换矩阵&#34;&gt;组合出基变换矩阵&lt;/h2&gt;
-&lt;p&gt;根据上面的投影可以得到a,b,c三个向量的坐标：向量 $a=[1, 0]$，向量$b=[-\frac{1}{2},\frac{\sqrt{3}}{2}] $，向量 $c=[-\frac{1}{2},-\frac{\sqrt{3}}{2}] $&lt;/p&gt;
-&lt;p&gt;所以基变换矩阵为：&lt;/p&gt;
-$$
-A =  \left[ \begin{matrix} 1 &amp; -\frac{1}{2} &amp; -\frac{1}{2} \\ 0 &amp; \frac{\sqrt{3}}{2}&amp; -\frac{\sqrt{3}}{2} \end{matrix} \right] 
-$$&lt;p&gt;坐标转换公式为：&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;./imgs/a.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;什么是clark变换&#34;&gt;什么是Clark变换？&lt;/h2&gt;&#xA;&lt;p&gt;Clark变换将三相系统（在 abc 坐标系中）的时域分量转换为正交静止坐标系 (αβ) 中的两个分量。&lt;/p&gt;&#xA;&lt;h2 id=&#34;利用基变换来实现三相坐标系abc到两相正交坐标系αβ&#34;&gt;利用基变换来实现三相坐标系(abc)到两相正交坐标系(αβ)&lt;/h2&gt;&#xA;&lt;p&gt;已知三相坐标系的相位依次相差120°且αβ为正交坐标系。&#xA;将α轴与a轴重叠，将向量a沿着原点O的方向延长做一条辅助线，∠boe和∠coe等于60°。&lt;/p&gt;&#xA;&lt;h2 id=&#34;计算向量b和向量c到α轴的投影长度&#34;&gt;计算向量b和向量c到α轴的投影长度：&lt;/h2&gt;&#xA;$$&#xA;be = \sin(∠boe) = \sin(60°) = \frac{\sqrt{3}}{2}  \\ ce = -\sin(∠coe) = -\sin(60°) = -\frac{\sqrt{3}}{2}  &#xA;$$&lt;p&gt;因为向量c在α轴的下方所以投影为负&lt;/p&gt;&#xA;&lt;h2 id=&#34;计算向量b和向量c到β轴的投影长度&#34;&gt;计算向量b和向量c到β轴的投影长度：&lt;/h2&gt;&#xA;$$&#xA;bg = -\cos(∠boe) = -\cos(60°) = -\frac{1}{2}  \\   &#xA;ch = -\cos(∠coe) = -\cos(60°) = -\frac{1}{2}  &#xA;$$&lt;p&gt;因为向量b和向量c在β轴的左侧所以投影为负&lt;/p&gt;&#xA;&lt;h2 id=&#34;组合出基变换矩阵&#34;&gt;组合出基变换矩阵&lt;/h2&gt;&#xA;&lt;p&gt;根据上面的投影可以得到a,b,c三个向量的坐标：向量 $a=[1, 0]$，向量$b=[-\frac{1}{2},\frac{\sqrt{3}}{2}] $，向量 $c=[-\frac{1}{2},-\frac{\sqrt{3}}{2}] $&lt;/p&gt;&#xA;&lt;p&gt;所以基变换矩阵为：&lt;/p&gt;&#xA;$$&#xA;A =  \left[ \begin{matrix} 1 &amp; -\frac{1}{2} &amp; -\frac{1}{2} \\ 0 &amp; \frac{\sqrt{3}}{2}&amp; -\frac{\sqrt{3}}{2} \end{matrix} \right] &#xA;$$&lt;p&gt;坐标转换公式为：&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

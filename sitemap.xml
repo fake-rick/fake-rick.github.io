@@ -11,10 +11,10 @@
     <loc>https://fake-rick.github.io/</loc>
     <lastmod>2025-01-27T03:27:30+08:00</lastmod>
   </url><url>
-    <loc>https://fake-rick.github.io/tags/motor/</loc>
+    <loc>https://fake-rick.github.io/categories/motor/</loc>
     <lastmod>2025-01-27T03:27:30+08:00</lastmod>
   </url><url>
-    <loc>https://fake-rick.github.io/categories/motor/</loc>
+    <loc>https://fake-rick.github.io/tags/motor/</loc>
     <lastmod>2025-01-27T03:27:30+08:00</lastmod>
   </url><url>
     <loc>https://fake-rick.github.io/posts/</loc>
@@ -29,10 +29,10 @@
     <loc>https://fake-rick.github.io/posts/%E8%A1%8C%E6%98%9F%E5%87%8F%E9%80%9F%E5%99%A8%E8%AE%BE%E8%AE%A1/</loc>
     <lastmod>2025-01-27T03:27:30+08:00</lastmod>
   </url><url>
-    <loc>https://fake-rick.github.io/tags/qt/</loc>
+    <loc>https://fake-rick.github.io/categories/qt/</loc>
     <lastmod>2025-01-25T19:15:07+08:00</lastmod>
   </url><url>
-    <loc>https://fake-rick.github.io/categories/qt/</loc>
+    <loc>https://fake-rick.github.io/tags/qt/</loc>
     <lastmod>2025-01-25T19:15:07+08:00</lastmod>
   </url><url>
     <loc>https://fake-rick.github.io/tags/vtk/</loc>
@@ -68,10 +68,10 @@
     <loc>https://fake-rick.github.io/posts/rust%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91embassy%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2024-08-05T14:53:08+08:00</lastmod>
   </url><url>
-    <loc>https://fake-rick.github.io/tags/stm32/</loc>
+    <loc>https://fake-rick.github.io/categories/stm32/</loc>
     <lastmod>2024-08-05T14:53:08+08:00</lastmod>
   </url><url>
-    <loc>https://fake-rick.github.io/categories/stm32/</loc>
+    <loc>https://fake-rick.github.io/tags/stm32/</loc>
     <lastmod>2024-08-05T14:53:08+08:00</lastmod>
   </url><url>
     <loc>https://fake-rick.github.io/posts/rust%E9%85%8D%E7%BD%AEstm32%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</loc>
